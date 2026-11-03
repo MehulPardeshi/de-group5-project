@@ -32,7 +32,7 @@ The midterm falls in the same stretch as Milestone 2 (Nov 16/17), and Thanksgivi
 
 | What | Where |
 | --- | --- |
-| Tasks and deadlines | [Issues](../../issues) and the project board |
+| Tasks and deadlines | [Issues](../../issues) and the [project board](https://github.com/users/MehulPardeshi/projects/2) |
 | Progress by milestone | [Milestones](../../milestones) |
 | Meeting agendas and minutes | Our shared Google Doc (required by the course and reviewed for grading) |
 | Code and SQL | This repo |
