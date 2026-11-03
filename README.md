@@ -11,9 +11,9 @@ We are building an end-to-end data pipeline that answers a real-world problem: a
 | Name | GitHub | Role |
 | --- | --- | --- |
 | Mehul Pardeshi | @MehulPardeshi | Project manager (to be confirmed by team vote) |
-| Joshua Kalakoti | TBD | TBD |
-| Sowmya Rajesh | TBD | TBD |
-| Yang Lin | TBD | TBD |
+| Joshua Kalakoti | @JoshuaKalakoti | TBD |
+| Sowmya Rajesh | @Sowmya-Rajesh | TBD |
+| Yang Lin | @yanglin4ni | TBD |
 
 ## Deadlines
 
