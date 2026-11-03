@@ -42,10 +42,11 @@ The midterm falls in the same stretch as Milestone 2 (Nov 16/17), and Thanksgivi
 
 1. **Every piece of work is an issue** with one owner and a due date. Use **New issue → Task**.
 2. **Pick up work** by assigning yourself and moving the card to In Progress on the board.
-3. **Add your input** as comments on the issue, so decisions stay findable.
-4. **Change code on a branch** and open a pull request with `Closes #<issue number>`. One teammate reviews it before merging.
-5. **Stuck?** Add the `blocked` label and say so in WhatsApp. Early warnings give us more options.
-6. **We meet at least weekly**, and minutes go in the Google Doc.
+3. **Contribute through pull requests.** Don't push to `main`. Put your work on a branch and open a pull request with `Closes #<issue number>`, or `Part of #<issue number>` if the task isn't finished. This covers written work as well as code. You can do it all on the GitHub website: see [proposal/ideas](proposal/ideas/README.md) for the steps.
+4. **One teammate reviews** each pull request before it's merged.
+5. **Discuss on the issue or pull request**, so decisions stay findable.
+6. **Stuck?** Add the `blocked` label and say so in WhatsApp. Early warnings give us more options.
+7. **We meet online at least weekly**, and minutes go in the Google Doc. Pull requests don't replace this, because the course grades the meeting record. The final presentation on Dec 9 is in person.
 
 ## Ground rules
 
