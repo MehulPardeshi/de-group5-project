@@ -1,0 +1,21 @@
+# Course materials and local reference files in the project root
+/*.pdf
+/*.png
+/*.docx
+
+# Datasets belong in PostgreSQL, S3 or MongoDB
+data/
+
+# Secrets
+.env
+.env.*
+*.pem
+
+# Python
+__pycache__/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
