@@ -53,4 +53,3 @@ The midterm falls in the same stretch as Milestone 2 (Nov 16/17), and Thanksgivi
 - **Never commit** passwords, API keys, AWS credentials or `.env` files.
 - **Never commit datasets.** They live in PostgreSQL, S3 or MongoDB, and the `data/` folder is ignored by git.
 - **Real data only.** Fabricating data is an automatic project failure.
-- **Keep this repo private.**
