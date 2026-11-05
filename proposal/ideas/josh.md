@@ -22,7 +22,11 @@ The goal is to build a data pipeline that collects machine sensor data, identifi
 **Any datasets you know of, with links**
 
 [AI4I Predictive Maintenance Dataset 
-](https://www.kaggle.com/datasets/shivamb/machine-predictive-maintenance-classification)	
+](https://www.kaggle.com/datasets/shivamb/machine-predictive-maintenance-classification)
+
+NASA: https://www.nasa.gov/intelligent-systems-division/
+
+UCI MLR: https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset
 	
 **Why you care about it**
 
@@ -54,6 +58,10 @@ For example, a robotic arm equipped with a camera could inspect manufactured com
     Automotive, electronics, and aerospace manufacturers.
 
 **Any datasets you know of, with links**
+
+MVTEC ITODD: https://www.mvtec.com/research-teaching/datasets/mvtec-itodd
+
+MVTEC AD: https://www.mvtec.com/research-teaching/datasets/mvtec-ad
 
 [Amazon Robotic Manipulation Benchmark (ARMBench) 
 ](https://www.amazon.science/code-and-datasets/amazon-robotic-manipulation-benchmark-armbench)
