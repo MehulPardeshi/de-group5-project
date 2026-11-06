@@ -62,10 +62,10 @@ _Updated Nov 6, 2026. The project manager keeps this section current._
   - structured data goes into PostgreSQL
   - raw data is kept separate from cleaned data
 - **Never commit secrets or data.** Passwords, API keys, `.env` files and datasets stay out of git. **This repo is public.**
-- **AI use is not confirmed for this project.** The syllabus treats generative AI as unauthorized for graded work unless the instructors say otherwise, and it requires students to acknowledge any help they get. Until [issue #7](https://github.com/MehulPardeshi/de-group5-project/issues/7) says otherwise:
-  - **You can:** explain the project, the tasks, GitHub steps and course concepts.
-  - **You can't:** write the graded text or code for them. Help them write their own.
-  - **Always:** remind them to note any AI help in their PR description.
+- **AI use follows the syllabus, "Policy on Collaboration and Cheating":**
+  - Using unauthorized material, including generative AI tools, to prepare an assignment is cheating, unless the teaching team indicates otherwise.
+  - Any help received has to be acknowledged in the submission, naming the sources it came from.
+  - If unsure what's acceptable, ask the instructor.
 
 ## Key dates
 
