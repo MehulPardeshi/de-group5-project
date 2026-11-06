@@ -21,7 +21,7 @@
 - **Who would benefit:** Fintech analysts, companies’ US–Taiwan finance teams, and pricing consultants.
 - **Datasets I know of (with links):**
   1. **[Central Bank of Taiwan Monthly Average Exchange Rates — FTDOpenData016.csv](https://www.cbc.gov.tw/public/data/OpenData/%E5%A4%96%E5%8C%AF%E5%B1%80/FTDOpenData016.csv):** CSV data showing New Taiwan dollars per US dollar. The monthly rate is the geometric average of daily interbank closing rates, so no daily-to-monthly calculation is needed.
-  2. **[US Bureau of Labor Statistics Consumer Price Index](https://www.bls.gov/cpi/data.htm):** Monthly US consumer-price data. Use the national all-items CPI-U series to track price changes.
+  2. **[US Bureau of Labor Statistics Consumer Price Index — JSON API](https://www.bls.gov/developers/api_signature_v2.htm):** Semi-structured JSON containing monthly US CPI observations and footnotes. Use series `CUUR0000SA0`, the US city average all-items CPI-U, not seasonally adjusted. Preserve the original JSON response, then extract the monthly records for January 2023–December 2025 into PostgreSQL.
   3. **[Taiwan Directorate-General of Budget, Accounting and Statistics](https://eng.stat.gov.tw/):** Monthly Taiwan Consumer Price Index data for comparing inflation with the US.
 
   Use January 2023 through December 2025, after confirming coverage in all three datasets. Join the records by year and month. Set both price indices to 100 in January 2023 to compare changes over time, while explaining differences in their consumer baskets, weights, and statistical methods. This shows how prices have changed, rather than which market is cheaper.
