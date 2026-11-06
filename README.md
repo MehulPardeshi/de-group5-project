@@ -37,6 +37,7 @@ The midterm falls in the same stretch as Milestone 2 (Nov 16/17), and Thanksgivi
 | Meeting agendas and minutes | Our shared Google Doc (required by the course and reviewed for grading) |
 | Code and SQL | This repo |
 | Group chat | WhatsApp |
+| Help from Claude or Codex | Ask it to read [AGENTS.md](AGENTS.md) first |
 
 ## How we work
 
