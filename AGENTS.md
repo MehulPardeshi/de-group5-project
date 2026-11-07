@@ -12,15 +12,16 @@ A teammate has asked you for help with our course project. Read this whole file 
 | GitHub | Name | Role |
 | --- | --- | --- |
 | @MehulPardeshi | Mehul Pardeshi | Project manager. Assembles and submits deliverables. |
-| @JoshuaKalakoti | Joshua Kalakoti | Owns the team's Google Doc of meeting notes |
+| @JoshuaKalakoti | Joshua Kalakoti | Owns the team's Google Doc ("DE Group 5 Docs"). Meeting agendas and minutes go in its "Meeting Agenda & Minutes" tab. |
 | @Sowmya-Rajesh | Sowmya Rajesh | |
 | @yanglin4ni | Yang Lin | |
 
 ## Current status
-_Updated Nov 6, 2026. The project manager keeps this section current._
+_Updated Nov 7, 2026. The project manager keeps this section current._
 
 - **Now:** Milestone 1, the proposal, due **Mon Nov 9, 11:59 pm**. Late work is not accepted.
-- **Topic:** being voted on in WhatsApp. The options are flight delays, food labels and the tech job market, all in [proposal/ideas](proposal/ideas). Until the vote closes, treat the topic as undecided.
+- **Topic:** Flight delays, chosen by WhatsApp poll. The idea is in [proposal/ideas/mehul.md](proposal/ideas/mehul.md).
+- **Project manager:** Mehul, agreed in WhatsApp.
 - **Proposal sections:** claimed in WhatsApp, first come, first served. Joshua, Sowmya and Yang each take one of these:
   - Context and problem statement
   - Specific questions
