@@ -29,10 +29,13 @@ _At least three questions, each concrete enough to answer with data._
 4. Are other factors more significant than weather when addressing these causes?
 
 ### Yang's draft
-1.Which airports, airlines, or routes have the highest estimated disruption costs in USD during severe weather?
-2.During comparable weather conditions at the same airport, which airlines have the lowest delay and cancellation rates after accounting for route and scheduled departure time?
-3.Following a severe-weather day, how many days does each airport (we can pick the biggest 3 airport in the US) take to return to its typical delay and cancellation rates for that weekday?
-4.What estimated disruption costs accumulate after a severe-weather day until airport performance returns to normal? 
+1.  Which airports, airlines, or routes have the highest     estimated disruption costs in USD during severe weather?
+
+2.  During comparable weather conditions at the same airport, which airlines have the lowest delay and cancellation rates after accounting for route and scheduled departure time?
+
+3.  Following a severe-weather day, how many days does each airport (we can pick the biggest 3 airport in the US) take to return to its typical delay and cancellation rates for that weekday?
+
+4.  What estimated disruption costs accumulate after a severe-weather day until airport performance returns to normal? 
 
 ## Why it matters and who benefits
 **Owner:** _TBD_
@@ -47,7 +50,7 @@ _Why our team chose this topic._
 - Josh: The importance of efficiency and customer satisfaction in the commercial flight economy. 
 - Mehul: I have always enjoyed turning ideas into something people can actually use, and this project interests me because I want to understand what really causes flight delays and how that affects travelers.
 - Sowmya:
-- Yang:
+- Yang: I want to understand how different attributes affect airline operations and each airline weaknesses when dealing with multiple factors that will lead to flight delay.
 
 ## Datasets we plan to use (optional for Milestone 1)
 
