@@ -45,7 +45,7 @@ _Why these questions are valuable, and to whom._
 _Why our team chose this topic._
 
 - Josh: The importance of efficiency and customer satisfaction in the commercial flight economy. 
-- Mehul:
+- Mehul: I have always found joy in building things that people can actually use, and I believe that technology and data can help us better understand problems that affect people in their everyday lives. Flight delays are something that almost everyone who travels has experienced, but what interests me is understanding what actually happens behind these delays and whether weather is always the main reason or if there are other factors involved. I have always been interested in taking something that might seem complicated at first and turning it into something practical and useful. Through this project, I want to explore how we can use large amounts of real-world data to identify patterns, compare how different airlines handle similar situations, and understand how airports recover from disruptions. What excites me most is that our findings could help travelers better understand their delays while also providing useful insights for airlines and airports. For me, this project is not just about analyzing data or finding patterns, but also about understanding how those findings can be used to make better decisions. I see this as an opportunity to apply what we learn in class to a real-world problem while also improving my understanding of how data can be used to build solutions that are both practical and helpful to people.
 - Sowmya:
 - Yang:
 
