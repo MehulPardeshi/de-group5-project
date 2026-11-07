@@ -2,13 +2,13 @@
 
 Due Mon, Nov 9, 11:59 pm. The final PDF is 1-2 pages. Each person writes their section, then Mehul assembles the PDF.
 
-**Team section owner:** Mehul (done, except the Google Doc link)
+**Team section owner:** Mehul (done)
 
 ## Team
 - **Team:** Section C2, Group 5
 - **Members:** Joshua Kalakoti, Mehul Pardeshi, Sowmya Rajesh, Yang Lin
 - **Project manager:** Mehul Pardeshi
-- **Meeting notes:** _(Google Doc link, with at least one meeting in it)_
+- **Meeting notes:** https://docs.google.com/document/d/1ZRghN_Yd0TvMPLkODDwQJpOp_zMgrPgINymwyh_op-E/edit?usp=sharing
 
 ## Context and problem statement
 **Owner:** Josh
