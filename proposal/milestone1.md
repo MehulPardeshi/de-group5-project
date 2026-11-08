@@ -18,21 +18,14 @@ In the 21st century, air transportation is a critical element of the US economy 
 _The business or societal context, and the one real-world problem we're exploring. This can't change after Monday._
 
 ## Specific questions
-**Owner:** Josh and Yang both drafted this. Pick one set, or combine them, on WhatsApp.
+**Owner:** Yang (final set agreed at the Nov 8 meeting, combining Josh's and Yang's drafts)
 
-_At least three questions, each concrete enough to answer with data._
+1. What share of flight delays are caused by weather, compared with airline, airport or air-traffic causes?
+2. When a delay is attributed to weather, does the weather data show that the weather was actually bad that day?
+3. Under similar weather at the same airport, which airlines have the lowest delay and cancellation rates?
+4. After a severe-weather day, how many days do the three busiest US airports take to return to their usual delay and cancellation rates?
 
-### Josh's draft
-1. What proportion of flights delays are weather-related?
-2. Are there other factors that are causing more flight delays than weather?
-3. How do these factors correlate as causes?
-4. Are other factors more significant than weather when addressing these causes?
-
-### Yang's draft
-1.Which airports, airlines, or routes have the highest estimated disruption costs in USD during severe weather?
-2.During comparable weather conditions at the same airport, which airlines have the lowest delay and cancellation rates after accounting for route and scheduled departure time?
-3.Following a severe-weather day, how many days does each airport (we can pick the biggest 3 airport in the US) take to return to its typical delay and cancellation rates for that weekday?
-4.What estimated disruption costs accumulate after a severe-weather day until airport performance returns to normal? 
+_Cost questions were left out of Milestone 1 because none of our datasets have cost data. The scope can be refined after Milestone 1 if time allows._
 
 ## Why it matters and who benefits
 **Owner:** Sowmya
