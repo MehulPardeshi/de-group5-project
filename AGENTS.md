@@ -11,9 +11,9 @@ A teammate has asked you for help with our course project. Read this whole file 
 
 | GitHub | Name | Role |
 | --- | --- | --- |
-| @MehulPardeshi | Mehul Pardeshi | Project manager. Assembles and submits deliverables. |
+| @MehulPardeshi | Mehul Pardeshi | Project manager. Assembles deliverables. |
 | @JoshuaKalakoti | Joshua Kalakoti | Owns the team's Google Doc ("DE Group 5 Docs"). Meeting agendas and minutes go in its "Meeting Agenda & Minutes" tab. |
-| @Sowmya-Rajesh | Sowmya Rajesh | Communication with TAs and professors |
+| @Sowmya-Rajesh | Sowmya Rajesh | Communication with TAs and professors; shares docs and submits deliverables |
 | @yanglin4ni | Yang Lin (goes by Henry) | |
 
 ## Current status
@@ -22,9 +22,9 @@ _Updated Nov 8, 2026. The project manager keeps this section current._
 - **Now:** Milestone 1, the proposal, due **Mon Nov 9, 11:59 pm**. Late work is not accepted.
 - **Topic:** Flight delays, chosen by WhatsApp poll. The idea is in [proposal/ideas/mehul.md](proposal/ideas/mehul.md).
 - **Project manager:** Mehul, agreed in WhatsApp.
-- **Proposal:** almost done in [PR #37](https://github.com/MehulPardeshi/de-group5-project/pull/37). Team (Mehul), context (Josh), why it matters (Sowmya) and the final four questions are in. **Missing: Yang's motivation line**, due Sun Nov 8, 9 pm.
-- **Next:** everyone reviews the full draft by Mon Nov 9, 12 pm. Mehul and Sowmya submit the PDF by 9 pm.
-- **Google Doc:** Joshua shares it with all instructors and TAs by Sun Nov 8, 9 pm. Sowmya is backup.
+- **Proposal:** final version is in the Google Doc's "Project Proposal" tab (source text in [PR #37](https://github.com/MehulPardeshi/de-group5-project/pull/37)). Team (Mehul), context (Josh), why it matters (Sowmya) and the final four questions are in. **Missing: Yang's motivation line**, due Sun Nov 8, 9 pm.
+- **Next:** everyone reviews the full draft by Mon Nov 9, 12 pm. Sowmya downloads the Proposal tab as a PDF and submits it on Canvas by 9 pm.
+- **Google Doc:** Sowmya shares it with all instructors and TAs by Sun Nov 8, 9 pm.
 - **Sowmya:** emails the TA about a team contract and peer evaluation.
 - **Latest meeting:** [meetings/2026-11-08.md](meetings/2026-11-08.md).
 - **Meetings:** weekly, online, time posted in WhatsApp. Decisions are made in chat beforehand, and meetings confirm who does what.
