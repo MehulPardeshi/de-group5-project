@@ -27,6 +27,16 @@ _The business or societal context, and the one real-world problem we're explorin
 
 _Cost questions were left out of Milestone 1 because none of our datasets have cost data. The scope can be refined after Milestone 1 if time allows._
 
+### Working definitions for weather analysis
+
+Provisional definitions for team review, based on National Weather Service (NWS) criteria; these are study indicators, not a universal NOAA definition of severe weather.
+
+- **High-wind threshold (`high_wind_threshold_met`):** A valid daily peak wind gust at the matched airport station of at least **58 mph** (approximately **25.9 m/s**). This flags the gust threshold only; it does not establish that NWS issued a warning or that sustained-wind duration criteria were met. [NWS high-wind criteria](https://www.weather.gov/box/criteria)
+- **Recorded storm event (`selected_storm_event_present`):** A NOAA Storm Events record classified as **Thunderstorm Wind, Tornado, Blizzard, Winter Storm, or High Wind**, overlapping the airport's analysis date and matched geographic area. These categories are our proposed selection. The team will document the geographic matching rule and time-zone handling before analysis. [NOAA Storm Events](https://www.ncei.noaa.gov/access/storm-events-database/)
+- **Combined study indicator:** A day is flagged when either indicator is positive. Missing or quality-rejected wind observations remain unknown; if no event is matched and wind data are missing, the combined result remains unknown. No matching event is not proof of good weather.
+
+For GHCN-Daily observations, check station coverage for `WSF5` (fastest 5-second wind speed), units, scaling, and quality flags before applying the gust threshold. Daily average wind is not a substitute. This indicator does not capture every aviation-disrupting condition, such as fog or less intense thunderstorms, and cannot prove the cause of an individual flight delay. [NOAA field documentation](https://www.ncei.noaa.gov/pub/data/ghcn/daily/readme.txt)
+
 ## Why it matters and who benefits
 **Owner:** Sowmya
 
