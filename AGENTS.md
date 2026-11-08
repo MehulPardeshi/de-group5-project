@@ -13,23 +13,21 @@ A teammate has asked you for help with our course project. Read this whole file 
 | --- | --- | --- |
 | @MehulPardeshi | Mehul Pardeshi | Project manager. Assembles and submits deliverables. |
 | @JoshuaKalakoti | Joshua Kalakoti | Owns the team's Google Doc ("DE Group 5 Docs"). Meeting agendas and minutes go in its "Meeting Agenda & Minutes" tab. |
-| @Sowmya-Rajesh | Sowmya Rajesh | |
-| @yanglin4ni | Yang Lin | |
+| @Sowmya-Rajesh | Sowmya Rajesh | Communication with TAs and professors |
+| @yanglin4ni | Yang Lin (goes by Henry) | |
 
 ## Current status
-_Updated Nov 7, 2026. The project manager keeps this section current._
+_Updated Nov 8, 2026. The project manager keeps this section current._
 
 - **Now:** Milestone 1, the proposal, due **Mon Nov 9, 11:59 pm**. Late work is not accepted.
 - **Topic:** Flight delays, chosen by WhatsApp poll. The idea is in [proposal/ideas/mehul.md](proposal/ideas/mehul.md).
 - **Project manager:** Mehul, agreed in WhatsApp.
-- **Proposal sections:** claimed in WhatsApp, first come, first served. Joshua, Sowmya and Yang each take one of these:
-  - Context and problem statement
-  - Specific questions
-  - Why it matters and who benefits
-- **Already done:** Mehul wrote the Team section.
-- **Everyone:** writes one line under "Our motivation".
-- **Where to write:** [proposal/milestone1.md](proposal/milestone1.md) in [PR #37](https://github.com/MehulPardeshi/de-group5-project/pull/37). Drafts are due **Sun Nov 8, 9 pm**.
-- **Meeting:** short and online. The time is in WhatsApp. It's only for confirming who does what, because decisions are made in chat beforehand.
+- **Proposal:** almost done in [PR #37](https://github.com/MehulPardeshi/de-group5-project/pull/37). Team (Mehul), context (Josh), why it matters (Sowmya) and the final four questions are in. **Missing: Yang's motivation line**, due Sun Nov 8, 9 pm.
+- **Next:** everyone reviews the full draft by Mon Nov 9, 12 pm. Mehul and Sowmya submit the PDF by 9 pm.
+- **Google Doc:** Joshua shares it with all instructors and TAs by Sun Nov 8, 9 pm. Sowmya is backup.
+- **Sowmya:** emails the TA about a team contract and peer evaluation.
+- **Latest meeting:** [meetings/2026-11-08.md](meetings/2026-11-08.md).
+- **Meetings:** weekly, online, time posted in WhatsApp. Decisions are made in chat beforehand, and meetings confirm who does what.
 
 ## What to do first
 1. **Ask the teammate for their GitHub username** if you don't know it, and tell them which name it matches.
