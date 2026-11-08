@@ -35,9 +35,10 @@ _At least three questions, each concrete enough to answer with data._
 4.What estimated disruption costs accumulate after a severe-weather day until airport performance returns to normal? 
 
 ## Why it matters and who benefits
-**Owner:** _TBD_
+**Owner:** Sowmya
 
-_Why these questions are valuable, and to whom._
+Flight delays cost travelers time and money. For airlines and airports they mean crew overtime, rebooking and unhappy customers. Our questions try to sort out which delays could have been prevented and which could not. If most delays come from airline or airport problems rather than weather (Q1), those are the areas with room to improve. Q2 matters to passengers directly: airlines usually offer less help, like meals or hotel rooms, when a delay is blamed on weather, so it is worth checking whether the "weather" label actually matches the weather that day. The US Department of Transportation also relies on this reporting, so regulators would care about the answer too. Comparing airlines under the same weather at the same airport (Q3) gives travelers and corporate travel planners a fairer basis for choosing an airline than plain on-time rankings. Finally, knowing how long recovery takes after a severe-weather day (Q4) helps airports and airlines plan staffing and rebooking for the days that follow, when delays often keep piling up.
+
 
 ## Our motivation
 **Owner:** everyone, one line each
@@ -46,7 +47,7 @@ _Why our team chose this topic._
 
 - Josh: The importance of efficiency and customer satisfaction in the commercial flight economy. 
 - Mehul: I have always enjoyed turning ideas into something people can actually use, and this project interests me because I want to understand what really causes flight delays and how that affects travelers.
-- Sowmya:
+- Sowmya: I fly often and have had my share of delays and cancellations, so this topic is personal, and I'd like to understand what actually causes them.
 - Yang:
 
 ## Datasets we plan to use (optional for Milestone 1)
