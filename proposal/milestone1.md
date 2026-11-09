@@ -27,6 +27,27 @@ _The business or societal context, and the one real-world problem we're explorin
 
 _Cost questions were left out of Milestone 1 because none of our datasets have cost data. The scope can be refined after Milestone 1 if time allows._
 
+### Working definitions for weather analysis
+
+Provisional definitions for team review, based on National Weather Service (NWS) criteria; these are study indicators, not a universal NOAA definition of severe weather.
+
+- **High-wind threshold (`high_wind_threshold_met`):** A valid daily peak wind gust at the matched airport station of at least **58 mph** (approximately **25.9 m/s**). This flags the gust threshold only; it does not establish that NWS issued a warning or that sustained-wind duration criteria were met. [NWS high-wind criteria](https://www.weather.gov/box/criteria)
+- **Recorded storm event (`selected_storm_event_present`):** A NOAA Storm Events record classified as **Thunderstorm Wind, Tornado, Blizzard, Winter Storm, or High Wind**, overlapping the airport's analysis date and matched geographic area. These categories are our proposed selection. The team will document the geographic matching rule and time-zone handling before analysis. [NOAA Storm Events](https://www.ncei.noaa.gov/access/storm-events-database/)
+- **Combined study indicator:** A day is flagged when either indicator is positive. Missing or quality-rejected wind observations remain unknown; if no event is matched and wind data are missing, the combined result remains unknown. No matching event is not proof of good weather.
+
+For GHCN-Daily observations, check station coverage for `WSF5` (fastest 5-second wind speed), units, scaling, and quality flags before applying the gust threshold. Daily average wind is not a substitute. This indicator does not capture every aviation-disrupting condition, such as fog or less intense thunderstorms, and cannot prove the cause of an individual flight delay. [NOAA field documentation](https://www.ncei.noaa.gov/pub/data/ghcn/daily/readme.txt)
+
+### Working definitions for airport size and recovery
+
+These definitions are proposals for team review. The recovery window and tolerance below are analytical choices, not official BTS or NOAA standards.
+
+- **Three busiest airports:** Rank US origin airports by the number of scheduled departures in the selected BTS On-Time Performance records over the full, agreed study period, including flights later cancelled. Deduplicate flight records, use consistent reporting coverage, and select the top three before inspecting their disruption results. Break ties by airport code. Describe them as "the three busiest airports by scheduled departures in our BTS study data," not the three busiest by passengers or all US aircraft movements. [BTS data source](https://www.transtats.bts.gov/ONTIME/)
+- **Daily performance measures:** For each selected origin airport and local scheduled-departure date, calculate (1) the share of noncancelled, nondiverted flights with valid arrival-delay data arriving at least 15 minutes late, and (2) cancellations divided by all scheduled departures. Report missing arrival data and diversions separately. The 15-minute arrival-delay threshold follows BTS; the denominators and grouping are our study choices. [BTS delay definition](https://www.transtats.bts.gov/ot_delay/)
+- **Normal-performance baseline:** For each recovery date and airport, use separate median daily delay and cancellation rates from the same weekday in the eight weeks before the weather episode started. Keep only days with a known zero combined study hazard indicator and valid performance data. This is a "no selected hazard recorded" baseline, not proof of ideal weather. Require at least four eligible reference days; otherwise mark the baseline unavailable. Extra pre-study data will be needed.
+- **Return to normal:** As an initial rule for review, both daily rates must be no more than **5 percentage points above** their respective weekday baselines for **two consecutive days**, each with a known zero study hazard indicator. Record recovery on the second qualifying day. Measure elapsed calendar days from the final day of a consecutive flagged weather episode. If another flagged day interrupts recovery, mark the episode interrupted rather than attributing all later disruption to the original event. Missing data or the end of the observation window means recovery is unknown/not observed, not zero days. Obtain post-study data where needed and compare results using 2-, 5-, and 10-percentage-point tolerances.
+
+The team must confirm the study dates, data coverage, minimum daily flight counts, and these provisional settings before implementation. These measures describe observed recovery; they do not establish that all delays during recovery were caused by the weather episode.
+
 ## Why it matters and who benefits
 **Owner:** Sowmya
 
