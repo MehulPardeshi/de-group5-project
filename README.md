@@ -4,16 +4,16 @@ Course project for 95-815 Data Engineering (Fall 2026, Mini 2), worth 30% of the
 
 We are building an end-to-end data pipeline that answers a real-world problem: acquire, store, clean, integrate, serve, analyze.
 
-**Topic:** to be decided (see Milestone 1).
+**Topic:** how much of US flight delay is really caused by weather?
 
 ## Team
 
 | Name | GitHub | Role |
 | --- | --- | --- |
-| Mehul Pardeshi | @MehulPardeshi | Project manager (to be confirmed by team vote) |
-| Joshua Kalakoti | @JoshuaKalakoti | TBD |
-| Sowmya Rajesh | @Sowmya-Rajesh | TBD |
-| Yang Lin | @yanglin4ni | TBD |
+| Mehul Pardeshi | @MehulPardeshi | Project manager; OurAirports data and database setup |
+| Joshua Kalakoti | @JoshuaKalakoti | NOAA Storm Events data; video editing |
+| Sowmya Rajesh | @Sowmya-Rajesh | BTS flight data; team communication |
+| Yang Lin | @yanglin4ni | NOAA daily weather data (JSON) |
 
 ## Deadlines
 
