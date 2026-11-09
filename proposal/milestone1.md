@@ -41,7 +41,7 @@ _Why our team chose this topic._
 - Josh: The importance of efficiency and customer satisfaction in the commercial flight economy. 
 - Mehul: I have always enjoyed turning ideas into something people can actually use, and this project interests me because I want to understand what really causes flight delays and how that affects travelers.
 - Sowmya: I fly often and have had my share of delays and cancellations, so this topic is personal, and I'd like to understand what actually causes them.
-- Yang:
+- Yang: I want to understand how different attributes affect airline operations and each airline weaknesses when dealing with multiple factors that will lead to flight delay.
 
 ## Datasets we plan to use (optional for Milestone 1)
 
