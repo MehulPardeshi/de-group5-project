@@ -1,0 +1,19 @@
+# Local PostgreSQL for the project. Start: docker compose up -d   Stop: docker compose down
+# Settings come from .env (copy .env.example). Data lives in the "pgdata" Docker volume, not in git.
+services:
+  postgres:
+    image: postgres:16
+    container_name: de-group5-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${PGDATABASE}
+      POSTGRES_USER: ${PGUSER}
+      POSTGRES_PASSWORD: ${PGPASSWORD}
+    ports:
+      - "${PGPORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./pipeline/setup/init.sql:/docker-entrypoint-initdb.d/01-init.sql:ro
+
+volumes:
+  pgdata:

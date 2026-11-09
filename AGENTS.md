@@ -27,17 +27,18 @@ _Updated Nov 9, 2026. The project manager keeps this section current._
   | Owner | Dataset | Issue | Stored in |
   | --- | --- | --- | --- |
   | Sowmya | BTS on-time flights | [#47](https://github.com/MehulPardeshi/de-group5-project/issues/47) | PostgreSQL |
-  | Yang | NOAA daily weather (JSON, our semi-structured dataset) | [#48](https://github.com/MehulPardeshi/de-group5-project/issues/48) | MongoDB or S3 |
+  | Yang | NOAA daily weather (JSON, our semi-structured dataset) | [#48](https://github.com/MehulPardeshi/de-group5-project/issues/48) | MongoDB Atlas |
   | Joshua | NOAA Storm Events | [#49](https://github.com/MehulPardeshi/de-group5-project/issues/49) | PostgreSQL |
-  | Mehul | OurAirports, plus the shared database setup ([#13](https://github.com/MehulPardeshi/de-group5-project/issues/13)) | [#50](https://github.com/MehulPardeshi/de-group5-project/issues/50) | PostgreSQL |
+  | Mehul | OurAirports, plus the database setup ([#13](https://github.com/MehulPardeshi/de-group5-project/issues/13), done) | [#50](https://github.com/MehulPardeshi/de-group5-project/issues/50) | PostgreSQL |
 
 - **Date range:** Jan 2025 through the latest month BTS has published.
+- **Databases:** PostgreSQL runs **locally in Docker** for each person (`docker compose up -d`; setup in [pipeline/setup](pipeline/setup/README.md)). MongoDB Atlas (cloud, shared) holds the NOAA JSON. AWS RDS was blocked on our account.
 - **Conventions:** each person works only in their own `pipeline/<dataset>/` folder. Raw data goes in the `raw` schema exactly as downloaded, and cleaned tables go in the `clean` schema. Quality issues go in `docs/data_quality_log.md`. Database logins are shared privately and never committed.
 - **Schedule:**
 
   | By | What |
   | --- | --- |
-  | Thu Nov 12 | Shared database ready (Mehul) |
+  | Thu Nov 12 | Everyone has Docker and Postgres running locally ([setup guide](pipeline/setup/README.md)) |
   | Sun Nov 15 | Every dataset loaded raw; short weekly meeting |
   | Nov 16-17 | Midterm, no project work |
   | Thu Nov 19 | Profiling, quality log and first cleaning done |
