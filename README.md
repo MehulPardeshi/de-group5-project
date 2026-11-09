@@ -52,13 +52,13 @@ The midterm falls in the same stretch as Milestone 2 (Nov 16/17), and Thanksgivi
 
 ## Getting set up
 
-1. Get the database logins from Mehul in a private message.
-2. Copy `.env.example` to `.env` and fill it in. Git ignores `.env`.
-3. `pip install -r requirements.txt`
+1. Follow [pipeline/setup](pipeline/setup/README.md): install Docker Desktop, copy `.env.example` to `.env`, and run `docker compose up -d`.
+2. Get the MongoDB link from Mehul privately (Yang needs it most). Git ignores `.env`.
+3. `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`, then run `pipeline/setup/check_connections.py`.
 4. Work in your dataset's folder under `pipeline/`, and open a pull request when a step works.
 
 ## Ground rules
 
 - **Never commit** passwords, API keys, AWS credentials or `.env` files.
-- **Never commit datasets.** They live in PostgreSQL, S3 or MongoDB, and the `data/` folder is ignored by git.
+- **Never commit datasets.** They live in PostgreSQL or MongoDB, and the `data/` folder is ignored by git.
 - **Real data only.** Fabricating data is an automatic project failure.

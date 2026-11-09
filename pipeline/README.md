@@ -4,7 +4,7 @@ One folder per dataset, so nobody edits the same files:
 
 | Folder | Dataset | Owner |
 | --- | --- | --- |
-| [setup](setup) | Shared PostgreSQL and MongoDB or S3 | Mehul |
+| [setup](setup) | Local PostgreSQL (Docker) and shared MongoDB Atlas | Mehul |
 | [bts](bts) | BTS on-time flights | Sowmya |
 | [noaa_weather](noaa_weather) | NOAA daily weather (JSON) | Yang |
 | [storm_events](storm_events) | NOAA Storm Events | Joshua |

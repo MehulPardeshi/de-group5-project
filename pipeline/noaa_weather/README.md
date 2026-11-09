@@ -1,6 +1,6 @@
 # NOAA daily weather (JSON)
 
-**Owner:** Yang · **Issue:** [#48](https://github.com/MehulPardeshi/de-group5-project/issues/48) · **Stored in:** MongoDB or S3 (`raw_noaa_daily`), flattened into PostgreSQL `clean.noaa_daily`
+**Owner:** Yang · **Issue:** [#48](https://github.com/MehulPardeshi/de-group5-project/issues/48) · **Stored in:** MongoDB Atlas (`de_group5.raw_noaa_daily`), flattened into PostgreSQL `clean.noaa_daily`
 
 Put everything for this dataset in this folder:
 
