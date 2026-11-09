@@ -17,17 +17,36 @@ A teammate has asked you for help with our course project. Read this whole file 
 | @yanglin4ni | Yang Lin (goes by Henry) | |
 
 ## Current status
-_Updated Nov 8, 2026. The project manager keeps this section current._
+_Updated Nov 9, 2026. The project manager keeps this section current._
 
-- **Now:** Milestone 1, the proposal, due **Mon Nov 9, 11:59 pm**. Late work is not accepted.
-- **Topic:** Flight delays, chosen by WhatsApp poll. The idea is in [proposal/ideas/mehul.md](proposal/ideas/mehul.md).
-- **Project manager:** Mehul, agreed in WhatsApp.
-- **Proposal:** final version is in the Google Doc's "Project Proposal" tab (source text in [PR #37](https://github.com/MehulPardeshi/de-group5-project/pull/37)). Team (Mehul), context (Josh), why it matters (Sowmya) and the final four questions are in. **Missing: Yang's motivation line**, due Sun Nov 8, 9 pm.
-- **Next:** everyone reviews the full draft by Mon Nov 9, 12 pm. Sowmya downloads the Proposal tab as a PDF and submits it on Canvas by 9 pm.
-- **Google Doc:** Sowmya shares it with all instructors and TAs by Sun Nov 8, 9 pm.
-- **Sowmya:** emails the TA about a team contract and peer evaluation.
-- **Latest meeting:** [meetings/2026-11-08.md](meetings/2026-11-08.md).
-- **Meetings:** weekly, online, time posted in WhatsApp. Decisions are made in chat beforehand, and meetings confirm who does what.
+- **Topic:** flight delays and weather. Project manager: Mehul.
+- **Milestone 1** (proposal) is submitted by Sowmya on Mon Nov 9. The final text is in the Google Doc's "Project Proposal" tab.
+- **Now: Milestone 2**, due **Mon Nov 23, 11:59 pm**: a 3-4 page PDF plus a 5-minute video on data sources, ingestion and initial cleaning. Late work is not accepted.
+- **Each person owns one dataset end to end** (acquire, load raw, profile, clean, write its PDF section, record about 1 minute of video):
+
+  | Owner | Dataset | Issue | Stored in |
+  | --- | --- | --- | --- |
+  | Sowmya | BTS on-time flights | [#47](https://github.com/MehulPardeshi/de-group5-project/issues/47) | PostgreSQL |
+  | Yang | NOAA daily weather (JSON, our semi-structured dataset) | [#48](https://github.com/MehulPardeshi/de-group5-project/issues/48) | MongoDB or S3 |
+  | Joshua | NOAA Storm Events | [#49](https://github.com/MehulPardeshi/de-group5-project/issues/49) | PostgreSQL |
+  | Mehul | OurAirports, plus the shared database setup ([#13](https://github.com/MehulPardeshi/de-group5-project/issues/13)) | [#50](https://github.com/MehulPardeshi/de-group5-project/issues/50) | PostgreSQL |
+
+- **Date range:** Jan 2025 through the latest month BTS has published.
+- **Conventions:** raw data goes in the `raw` schema exactly as downloaded, and cleaned tables go in the `clean` schema. Quality issues go in `docs/data_quality_log.md`. Database logins are shared privately and never committed.
+- **Schedule:**
+
+  | By | What |
+  | --- | --- |
+  | Thu Nov 12 | Shared database ready (Mehul) |
+  | Sun Nov 15 | Every dataset loaded raw; short weekly meeting |
+  | Nov 16-17 | Midterm, no project work |
+  | Thu Nov 19 | Profiling, quality log and first cleaning done |
+  | Fri Nov 20 | Each person's PDF section (Google Doc, Milestone 2 tab) and video clip done |
+  | Sat Nov 21 | Mehul assembles the PDF ([#19](https://github.com/MehulPardeshi/de-group5-project/issues/19)); Joshua edits the video ([#20](https://github.com/MehulPardeshi/de-group5-project/issues/20)) |
+  | Sun Nov 22 | Team review meeting |
+  | Mon Nov 23, 9 pm | Mehul submits ([#21](https://github.com/MehulPardeshi/de-group5-project/issues/21)) |
+
+- **Meetings:** weekly, online, with the time posted in WhatsApp. Decisions are made in chat beforehand, and meetings confirm who does what.
 
 ## What to do first
 1. **Ask the teammate for their GitHub username** if you don't know it, and tell them which name it matches.
@@ -77,5 +96,6 @@ _Updated Nov 8, 2026. The project manager keeps this section current._
 ## Where things are
 - **[README.md](README.md):** team overview and ground rules
 - **[proposal/ideas](proposal/ideas):** each person's topic ideas
-- **[proposal/milestone1.md](proposal/milestone1.md):** the proposal being written, in PR #37
+- **Google Doc:** meeting minutes, the Milestone 1 proposal and the Milestone 2 draft
+- **`docs/data_quality_log.md`:** every data quality issue and how we handled it (added with #13)
 - **[Issues](https://github.com/MehulPardeshi/de-group5-project/issues) and [milestones](https://github.com/MehulPardeshi/de-group5-project/milestones):** tasks and deadlines
