@@ -20,7 +20,7 @@ A teammate has asked you for help with our course project. Read this whole file 
 _Updated Nov 9, 2026. The project manager keeps this section current._
 
 - **Topic:** flight delays and weather. Project manager: Mehul.
-- **Milestone 1** (proposal) is submitted by Sowmya on Mon Nov 9. The final text is in the Google Doc's "Project Proposal" tab.
+- **Milestone 1** (proposal) is being submitted by Sowmya on Mon Nov 9 ([#12](https://github.com/MehulPardeshi/de-group5-project/issues/12)). The final text is in the Google Doc's "Project Proposal" tab.
 - **Now: Milestone 2**, due **Mon Nov 23, 11:59 pm**: a 3-4 page PDF plus a 5-minute video on data sources, ingestion and initial cleaning. Late work is not accepted.
 - **Each person owns one dataset end to end** (acquire, load raw, profile, clean, write its PDF section, record about 1 minute of video):
 
@@ -32,7 +32,7 @@ _Updated Nov 9, 2026. The project manager keeps this section current._
   | Mehul | OurAirports, plus the shared database setup ([#13](https://github.com/MehulPardeshi/de-group5-project/issues/13)) | [#50](https://github.com/MehulPardeshi/de-group5-project/issues/50) | PostgreSQL |
 
 - **Date range:** Jan 2025 through the latest month BTS has published.
-- **Conventions:** raw data goes in the `raw` schema exactly as downloaded, and cleaned tables go in the `clean` schema. Quality issues go in `docs/data_quality_log.md`. Database logins are shared privately and never committed.
+- **Conventions:** each person works only in their own `pipeline/<dataset>/` folder. Raw data goes in the `raw` schema exactly as downloaded, and cleaned tables go in the `clean` schema. Quality issues go in `docs/data_quality_log.md`. Database logins are shared privately and never committed.
 - **Schedule:**
 
   | By | What |
@@ -95,7 +95,10 @@ _Updated Nov 9, 2026. The project manager keeps this section current._
 
 ## Where things are
 - **[README.md](README.md):** team overview and ground rules
-- **[proposal/ideas](proposal/ideas):** each person's topic ideas
-- **Google Doc:** meeting minutes, the Milestone 1 proposal and the Milestone 2 draft
-- **`docs/data_quality_log.md`:** every data quality issue and how we handled it (added with #13)
-- **[Issues](https://github.com/MehulPardeshi/de-group5-project/issues) and [milestones](https://github.com/MehulPardeshi/de-group5-project/milestones):** tasks and deadlines
+- **[pipeline/](pipeline):** one folder per dataset (ingestion code, raw and clean SQL, source notes), plus `setup/` for the shared databases
+- **[docs/data_quality_log.md](docs/data_quality_log.md):** every data quality issue and how we handled it
+- **[.env.example](.env.example):** the connection settings each person copies to `.env`. Logins are shared privately.
+- **[proposal/](proposal):** topic ideas and the archived Milestone 1 draft
+- **[meetings/](meetings):** short meeting summaries. The graded minutes live in the Google Doc.
+- **Google Doc:** meeting minutes, the Milestone 1 proposal and the Milestone 2 draft. The link is in the README.
+- **[Issues](https://github.com/MehulPardeshi/de-group5-project/issues), [milestones](https://github.com/MehulPardeshi/de-group5-project/milestones) and the [board](https://github.com/users/MehulPardeshi/projects/2):** tasks and deadlines

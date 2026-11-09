@@ -34,8 +34,9 @@ The midterm falls in the same stretch as Milestone 2 (Nov 16/17), and Thanksgivi
 | --- | --- |
 | Tasks and deadlines | [Issues](../../issues) and the [project board](https://github.com/users/MehulPardeshi/projects/2) |
 | Progress by milestone | [Milestones](../../milestones) |
-| Meeting agendas and minutes | Our shared Google Doc (required by the course and reviewed for grading) |
-| Code and SQL | This repo |
+| Meeting agendas and minutes | [Our shared Google Doc](https://docs.google.com/document/d/1ZRghN_Yd0TvMPLkODDwQJpOp_zMgrPgINymwyh_op-E/edit) (team and teaching staff only; required by the course and reviewed for grading) |
+| Code and SQL | [pipeline/](pipeline), one folder per dataset |
+| Data quality issues | [docs/data_quality_log.md](docs/data_quality_log.md) |
 | Group chat | WhatsApp |
 | Help from Claude or Codex | Ask it to read [AGENTS.md](AGENTS.md) first |
 
@@ -48,6 +49,13 @@ The midterm falls in the same stretch as Milestone 2 (Nov 16/17), and Thanksgivi
 5. **Discuss on the issue or pull request**, so decisions stay findable.
 6. **Stuck?** Add the `blocked` label and say so in WhatsApp. Early warnings give us more options.
 7. **We meet online at least weekly**, and minutes go in the Google Doc. Pull requests don't replace this, because the course grades the meeting record. The final presentation on Dec 9 is in person.
+
+## Getting set up
+
+1. Get the database logins from Mehul in a private message.
+2. Copy `.env.example` to `.env` and fill it in. Git ignores `.env`.
+3. `pip install -r requirements.txt`
+4. Work in your dataset's folder under `pipeline/`, and open a pull request when a step works.
 
 ## Ground rules
 
