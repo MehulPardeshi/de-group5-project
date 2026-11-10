@@ -1,4 +1,4 @@
--- Create a clean US airport table for joining with flight data.
+-- Create a clean US and territories airport table for joining with flight data.
 DROP TABLE IF EXISTS clean.airports;
 
 CREATE TABLE clean.airports AS
@@ -32,7 +32,7 @@ WITH airports AS (
         END AS scheduled_service,
         id
     FROM raw.ourairports_airports
-    WHERE BTRIM(iso_country) = 'US'
+    WHERE BTRIM(iso_country) IN ('US', 'PR', 'VI', 'GU', 'MP')
       AND BTRIM(iata_code) ~ '^[A-Z]{3}$'
       AND BTRIM(type) <> 'closed'
 ),
@@ -63,10 +63,10 @@ WHERE row_num = 1;
 
 ALTER TABLE clean.airports ADD PRIMARY KEY (iata_code);
 
--- Funnel: raw rows -> US -> valid IATA -> open -> valid coordinates -> final.
+-- Funnel: raw rows -> US and territories -> valid IATA -> open -> valid coordinates -> final.
 WITH us AS (
     SELECT * FROM raw.ourairports_airports
-    WHERE BTRIM(iso_country) = 'US'
+    WHERE BTRIM(iso_country) IN ('US', 'PR', 'VI', 'GU', 'MP')
 ),
 valid_iata AS (
     SELECT * FROM us
@@ -93,7 +93,7 @@ valid_coordinates AS (
 )
 SELECT 1 AS step, 'Raw total' AS stage, COUNT(*) AS rows FROM raw.ourairports_airports
 UNION ALL
-SELECT 2, 'US airports', COUNT(*) FROM us
+SELECT 2, 'US and territories', COUNT(*) FROM us
 UNION ALL
 SELECT 3, 'Valid IATA code', COUNT(*) FROM valid_iata
 UNION ALL
@@ -103,3 +103,24 @@ SELECT 5, 'Valid coordinates', COUNT(*) FROM valid_coordinates
 UNION ALL
 SELECT 6, 'Final (after duplicate removal)', COUNT(*) FROM clean.airports
 ORDER BY step;
+
+
+-- Count territory airports in the cleaned table.
+SELECT COUNT(*) AS territory_airports_added
+FROM clean.airports
+WHERE iata_code IN (
+    SELECT BTRIM(iata_code)
+    FROM raw.ourairports_airports
+    WHERE BTRIM(iso_country) IN ('PR', 'VI', 'GU', 'MP')
+);
+
+-- Check how many cleaned airports have no elevation.
+SELECT COUNT(*) AS missing_elevation_in_clean
+FROM clean.airports
+WHERE elevation_ft IS NULL;
+
+-- Check that the three example airports are included.
+SELECT iata_code, name
+FROM clean.airports
+WHERE iata_code IN ('SJU', 'STT', 'GUM')
+ORDER BY iata_code;
