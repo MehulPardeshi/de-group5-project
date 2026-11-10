@@ -38,7 +38,7 @@ The midterm falls in the same stretch as Milestone 2 (Nov 16/17), and Thanksgivi
 | Code and SQL | [pipeline/](pipeline), one folder per dataset |
 | Data quality issues | [docs/data_quality_log.md](docs/data_quality_log.md) |
 | Group chat | WhatsApp |
-| Help from Claude or Codex | Ask it to read [AGENTS.md](AGENTS.md) first |
+| Questions for Claude or Codex | Explanations and GitHub help only. Ask it to read [AGENTS.md](AGENTS.md) first. |
 
 ## How we work
 
@@ -62,3 +62,4 @@ The midterm falls in the same stretch as Milestone 2 (Nov 16/17), and Thanksgivi
 - **Never commit** passwords, API keys, AWS credentials or `.env` files.
 - **Never commit datasets.** They live in PostgreSQL or MongoDB, and the `data/` folder is ignored by git.
 - **Real data only.** Fabricating data is an automatic project failure.
+- **No AI tools for graded work** (team decision, Nov 10). Write your own code and text, and acknowledge any help you get.
