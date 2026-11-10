@@ -22,7 +22,7 @@ _Updated Nov 10, 2026. The project manager keeps this section current._
 - **Topic:** flight delays and weather. Project manager: Mehul.
 - **Milestone 1** (proposal) was due Mon Nov 9; Sowmya submitted it (confirmation pending in [#12](https://github.com/MehulPardeshi/de-group5-project/issues/12)). The final text is in the Google Doc's "Project Proposal" tab, and the doc is shared with all instructors and TAs.
 - **Progress:** OurAirports raw load and clean table done ([PR #55](https://github.com/MehulPardeshi/de-group5-project/pull/55)). BTS, NOAA weather and Storm Events not started on GitHub yet.
-- **Google Doc:** the "Milestone 2" tab has a section for each owner (Part B data sources, Part C quality and cleaning). The Nov 15 meeting agenda is in the minutes tab.
+- **Google Doc:** the "Milestone 2" tab has a section for each owner (Part B data sources, Part C quality and cleaning). The Sat Nov 14 meeting agenda is in the minutes tab.
 - **Now: Milestone 2**, due **Mon Nov 23, 11:59 pm**: a 3-4 page PDF plus a 5-minute video on data sources, ingestion and initial cleaning. Late work is not accepted.
 - **Each person owns one dataset end to end** (acquire, load raw, profile, clean, write its PDF section, record about 1 minute of video):
 
@@ -41,7 +41,8 @@ _Updated Nov 10, 2026. The project manager keeps this section current._
   | By | What |
   | --- | --- |
   | Thu Nov 12 | Everyone has Docker and Postgres running locally ([setup guide](pipeline/setup/README.md)) |
-  | Sun Nov 15 | Every dataset loaded raw; short weekly meeting |
+  | Sat Nov 14 | Weekly meeting (online, about 10 min; agenda in the Google Doc) |
+| Sun Nov 15 | Every dataset loaded raw |
   | Nov 16-17 | Midterm, no project work |
   | Thu Nov 19 | Profiling, quality log and first cleaning done |
   | Fri Nov 20 | Each person's PDF section (Google Doc, Milestone 2 tab) and video clip done |
