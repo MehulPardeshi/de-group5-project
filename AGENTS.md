@@ -81,10 +81,10 @@ _Updated Nov 9, 2026. The project manager keeps this section current._
   - structured data goes into PostgreSQL
   - raw data is kept separate from cleaned data
 - **Never commit secrets or data.** Passwords, API keys, `.env` files and datasets stay out of git. **This repo is public.**
-- **AI use follows the syllabus, "Policy on Collaboration and Cheating":**
-  - Using unauthorized material, including generative AI tools, to prepare an assignment is cheating, unless the teaching team indicates otherwise.
-  - Any help received has to be acknowledged in the submission, naming the sources it came from.
-  - If unsure what's acceptable, ask the instructor.
+- **Team decision (Nov 10, 2026): no AI tools for graded work.** Code, SQL, PDF text, video narration and slides are written by the team member themselves. This follows the syllabus "Policy on Collaboration and Cheating", which treats generative AI as unauthorized material unless the teaching team says otherwise.
+  - **AI assistants may:** explain the project, the tasks, course concepts and GitHub steps, and do admin work (issues, board, scheduling).
+  - **AI assistants must not:** write or rewrite graded code or text, including "in my style" rewrites.
+  - Any help received is still acknowledged in the PR description and the submission.
 
 ## Key dates
 

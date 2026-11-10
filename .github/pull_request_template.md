@@ -10,4 +10,4 @@ Any issues found, and how they were handled. Add them to `docs/data_quality_log.
 
 ## Checklist
 - [ ] No passwords, `.env` files or data files in this PR
-- [ ] AI help, if any, described here (required by the syllabus)
+- [ ] I wrote this work myself. Our team doesn't use AI tools for graded work; any other help is acknowledged here.
