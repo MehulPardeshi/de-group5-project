@@ -18,3 +18,15 @@ Requests use the `/data` endpoint with `datasetid=GHCND`, one station and calend
 | Total | | 100 | 3,628,968 | 32,200 | 32,200 |
 
 The files are under `data/noaa_weather/` and use the pattern `AIRPORT_START_END_metric_OFFSET.json`. Each contains the original response bytes. Atlas stores one document per response in `de_group5.raw_noaa_daily`. Its SHA-256-based `_id` makes an identical response safe to reload. Each response contains `metadata.resultset` and a `results` array with `attributes`, `datatype`, `date`, `station`, and `value`. The loader reads each document back and compares its payload with the saved file before reporting counts.
+
+## Profile and first cleaning
+
+Run the profile and clean step after the raw load.
+
+```sh
+.venv/bin/python pipeline/noaa_weather/profile_and_clean.py
+```
+
+The script reads the Atlas copy of each saved response and checks it against the original file. It profiles the observations, then builds `clean.noaa_daily` in a PostgreSQL transaction. The table has one row per airport and date. Measurements without an observation stay NULL, and reported WT flags are stored as a JSON object.
+
+The raw load contains 32,200 observations across 3,040 station-days. The checks found zero duplicate observation keys, invalid dates, nonnumeric values, negative precipitation, snow or wind values, and days with TMAX below TMIN. See the [data quality log](../../docs/data_quality_log.md) for the gaps and wind comparison.
