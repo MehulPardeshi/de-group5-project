@@ -122,6 +122,7 @@ _Updated Nov 14, 2026. The project manager keeps this section current._
 ## Where things are
 - **[README.md](README.md):** team overview and ground rules
 - **[pipeline/](pipeline):** one folder per dataset (ingestion code, raw and clean SQL, source notes), plus `setup/` for the shared databases
+- **[docs/video_guide.md](docs/video_guide.md):** what each person shows in their 1-minute Milestone 2 clip
 - **[docs/data_quality_log.md](docs/data_quality_log.md):** every data quality issue and how we handled it
 - **[.env.example](.env.example):** the connection settings each person copies to `.env`. Logins are shared privately.
 - **[proposal/](proposal):** topic ideas and the archived Milestone 1 draft
