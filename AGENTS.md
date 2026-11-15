@@ -36,7 +36,26 @@ _Updated Nov 14, 2026. The project manager keeps this section current._
   | Joshua | NOAA Storm Events | [#49](https://github.com/MehulPardeshi/de-group5-project/issues/49) | PostgreSQL |
   | Mehul | OurAirports, plus the database setup ([#13](https://github.com/MehulPardeshi/de-group5-project/issues/13), done) | [#50](https://github.com/MehulPardeshi/de-group5-project/issues/50) | PostgreSQL |
 
-- **Date range:** Jan 2025 through the latest month BTS has published.
+- **What's left before the Nov 23 deadline** (each person's checklist is a comment on their issue):
+
+  | Who | Task | Due | Where |
+  | --- | --- | --- | --- |
+  | Sowmya | BTS raw load through Aug 2026 | Sun Nov 15 | [#47](https://github.com/MehulPardeshi/de-group5-project/issues/47) |
+  | Joshua | Storm Events raw load | Sun Nov 15 | [#49](https://github.com/MehulPardeshi/de-group5-project/issues/49) |
+  | Sowmya, Joshua | Profiling, quality log rows, clean table | Thu Nov 19 | #47, #49 |
+  | Sowmya | B1 and C1 in the Google Doc's Milestone 2 tab | Fri Nov 20 | #47 |
+  | Joshua | B3 and C3 in the Milestone 2 tab | Fri Nov 20 | #49 |
+  | Everyone | ~1 minute video clip, Drive link to Joshua | Fri Nov 20 | #47-#50 |
+  | Everyone | One line under "Acknowledgment of help received" in the Milestone 2 tab | Fri Nov 20 | Google Doc |
+  | Sowmya | Confirm the Milestone 1 Canvas submission | Now | [#12](https://github.com/MehulPardeshi/de-group5-project/issues/12) |
+  | Mehul | Assemble and trim the PDF | Sat Nov 21 | [#19](https://github.com/MehulPardeshi/de-group5-project/issues/19) |
+  | Joshua | Edit the clips into one video, under 5:00 | Sat Nov 21 | [#20](https://github.com/MehulPardeshi/de-group5-project/issues/20) |
+  | Everyone | Review call on Google Meet (also this week's required meeting) | Sun Nov 22 | Google Doc minutes |
+  | Mehul | Submit the PDF and video on Canvas | Mon Nov 23, 9 pm | [#21](https://github.com/MehulPardeshi/de-group5-project/issues/21) |
+
+  Already done: OurAirports (Mehul) and NOAA weather (Henry), including their B and C sections; Part A of the PDF.
+
+- **Date range:** Jan 2025 through **Aug 2026** (the latest BTS month when the weather data was loaded). Every dataset uses this range.
 - **Databases:** PostgreSQL runs **locally in Docker** for each person (`docker compose up -d`; setup in [pipeline/setup](pipeline/setup/README.md)). MongoDB Atlas (cloud, shared) holds the NOAA JSON. AWS RDS was blocked on our account.
 - **Conventions:** each person works only in their own `pipeline/<dataset>/` folder. Raw data goes in the `raw` schema exactly as downloaded, and cleaned tables go in the `clean` schema. Quality issues go in `docs/data_quality_log.md`. Database logins are shared privately and never committed.
 - **Schedule:**
@@ -44,7 +63,7 @@ _Updated Nov 14, 2026. The project manager keeps this section current._
   | By | What |
   | --- | --- |
   | Thu Nov 12 | Everyone has Docker and Postgres running locally ([setup guide](pipeline/setup/README.md)) |
-  | Sat Nov 14 | Weekly meeting (online, about 10 min; agenda in the Google Doc) |
+  | Sat Nov 14 | Weekly check-in (held in WhatsApp; notes in the Google Doc) |
   | Sun Nov 15 | Every dataset loaded raw |
   | Nov 16-17 | Midterm, no project work |
   | Thu Nov 19 | Profiling, quality log and first cleaning done |

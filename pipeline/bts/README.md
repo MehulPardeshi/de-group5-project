@@ -2,10 +2,10 @@
 
 **Owner:** Sowmya · **Issue:** [#47](https://github.com/MehulPardeshi/de-group5-project/issues/47) · **Stored in:** PostgreSQL `raw.bts_on_time`
 
-## Start here (before Sat Nov 14 call, then raw load by Sun Nov 15)
+## Start here (raw load due Sun Nov 15; full Milestone 2 checklist on the issue)
 
 1. **Setup (15 min):** follow [pipeline/setup](../setup/README.md). Done when `check_connections.py` prints `PostgreSQL OK`.
-2. **Download one month first:** on the [BTS download page](https://www.transtats.bts.gov/DL_SelectFields.aspx?gnoyr_VQ=FGJ), get **January 2025** (one zip is about 500-600k flights). Save it to `data/bts/` (git ignores `data/`). Once one month loads, get the rest (Jan 2025 to the latest month).
+2. **Download one month first:** on the [BTS download page](https://www.transtats.bts.gov/DL_SelectFields.aspx?gnoyr_VQ=FGJ), get **January 2025** (one zip is about 500-600k flights). Save it to `data/bts/` (git ignores `data/`). Once one month loads, get the rest (Jan 2025 through **Aug 2026**, the same range as the weather data).
 3. **Write down** in `notes.md`: the URL, the download date, file names and sizes, row count, column names.
 4. **Raw table and load:** `raw.sql` creates `raw.bts_on_time` with every column as TEXT. `ingest.py` loads the CSV with COPY and checks the row count. This is the same pattern as `pipeline/ourairports/`.
 5. **For the call, have ready:** is setup working? Is the data downloaded? Anything blocking you?
