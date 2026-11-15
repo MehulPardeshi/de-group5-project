@@ -2,13 +2,13 @@
 
 One folder per dataset, so nobody edits the same files:
 
-| Folder | Dataset | Owner |
-| --- | --- | --- |
-| [setup](setup) | Local PostgreSQL (Docker) and shared MongoDB Atlas | Mehul |
-| [bts](bts) | BTS on-time flights | Sowmya |
-| [noaa_weather](noaa_weather) | NOAA daily weather (JSON) | Yang |
-| [storm_events](storm_events) | NOAA Storm Events | Joshua |
-| [ourairports](ourairports) | OurAirports | Mehul |
+| Folder | Dataset | Owner | Status (Nov 14) |
+| --- | --- | --- | --- |
+| [setup](setup) | Local PostgreSQL (Docker) and shared MongoDB Atlas | Mehul | Done |
+| [bts](bts) | BTS on-time flights | Sowmya | Raw load due Sun Nov 15 |
+| [noaa_weather](noaa_weather) | NOAA daily weather (JSON) | Yang | Raw and clean done |
+| [storm_events](storm_events) | NOAA Storm Events | Joshua | Raw load due Sun Nov 15 |
+| [ourairports](ourairports) | OurAirports | Mehul | Raw and clean done |
 
 **Layers** (the course requires raw data to be kept separate from cleaned data):
 - `raw` schema in PostgreSQL, or a `raw_` collection: data exactly as downloaded. Load columns as text if types cause rows to fail.
