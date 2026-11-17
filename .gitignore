@@ -5,6 +5,10 @@
 
 # Datasets belong in PostgreSQL, S3 or MongoDB
 data/
+*.csv
+*.csv.gz
+*.zip
+*.parquet
 
 # Secrets
 .env
