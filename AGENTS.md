@@ -17,14 +17,14 @@ A teammate has asked you for help with our course project. Read this whole file 
 | @yanglin4ni | Yang Lin (goes by Henry) | |
 
 ## Current status
-_Updated Nov 14, 2026. The project manager keeps this section current._
+_Updated Nov 17, 2026. The project manager keeps this section current._
 
 - **Topic:** flight delays and weather. Project manager: Mehul.
 - **Milestone 1** (proposal) was due Mon Nov 9; Sowmya submitted it (confirmation pending in [#12](https://github.com/MehulPardeshi/de-group5-project/issues/12)). The final text is in the Google Doc's "Project Proposal" tab, and the doc is shared with all instructors and TAs.
 - **Progress:**
   - OurAirports: raw load, cleaning and quality log done ([PR #55](https://github.com/MehulPardeshi/de-group5-project/pull/55), [PR #57](https://github.com/MehulPardeshi/de-group5-project/pull/57)).
   - NOAA weather: raw JSON in Atlas, profiling and `clean.noaa_daily` done ([PR #62](https://github.com/MehulPardeshi/de-group5-project/pull/62)). Data runs Jan 2025 through **Aug 2026**, so BTS should load through the same month.
-  - BTS and Storm Events: raw loads due Sun Nov 15.
+  - BTS and Storm Events: raw loads were due Sun Nov 15 and aren't on GitHub yet (as of Nov 17). Storm Events files are downloaded; they were committed by mistake and removed in [PR #66](https://github.com/MehulPardeshi/de-group5-project/pull/66), so keep downloads in `data/`.
 - **Google Doc:** the "Milestone 2" tab has a section for each owner (Part B data sources, Part C quality and cleaning). The Sat Nov 14 check-in was held in WhatsApp; its notes are in the minutes tab.
 - **Now: Milestone 2**, due **Mon Nov 23, 11:59 pm**: a 3-4 page PDF plus a 5-minute video on data sources, ingestion and initial cleaning. Late work is not accepted.
 - **Each person owns one dataset end to end** (acquire, load raw, profile, clean, write its PDF section, record about 1 minute of video):
