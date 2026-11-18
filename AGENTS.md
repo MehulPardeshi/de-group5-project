@@ -36,7 +36,7 @@ _Updated Nov 17, 2026. The project manager keeps this section current._
   | Joshua | NOAA Storm Events | [#49](https://github.com/MehulPardeshi/de-group5-project/issues/49) | PostgreSQL |
   | Mehul | OurAirports, plus the database setup ([#13](https://github.com/MehulPardeshi/de-group5-project/issues/13), done) | [#50](https://github.com/MehulPardeshi/de-group5-project/issues/50) | PostgreSQL |
 
-- **What's left before the Nov 23 deadline** (each person's checklist is a comment on their issue):
+- **What's left before the Nov 23 deadline.** The pinned tracker [#70](https://github.com/MehulPardeshi/de-group5-project/issues/70) has the overview, and each person's checklist is at the top of their dataset issue:
 
   | Who | Task | Due | Where |
   | --- | --- | --- | --- |
@@ -46,11 +46,11 @@ _Updated Nov 17, 2026. The project manager keeps this section current._
   | Sowmya | B1 and C1 in the Google Doc's Milestone 2 tab | Fri Nov 20 | #47 |
   | Joshua | B3 and C3 in the Milestone 2 tab | Fri Nov 20 | #49 |
   | Everyone | ~1 minute video clip, Drive link to Joshua | Fri Nov 20 | #47-#50 |
-  | Everyone | One line under "Acknowledgment of help received" in the Milestone 2 tab | Fri Nov 20 | Google Doc |
+  | Everyone | One line under "Acknowledgment of help received" in the Milestone 2 tab | Fri Nov 20 | [#69](https://github.com/MehulPardeshi/de-group5-project/issues/69) |
   | Sowmya | Confirm the Milestone 1 Canvas submission | Now | [#12](https://github.com/MehulPardeshi/de-group5-project/issues/12) |
   | Mehul | Assemble and trim the PDF | Sat Nov 21 | [#19](https://github.com/MehulPardeshi/de-group5-project/issues/19) |
   | Joshua | Edit the clips into one video, under 5:00 | Sat Nov 21 | [#20](https://github.com/MehulPardeshi/de-group5-project/issues/20) |
-  | Everyone | Review call on Google Meet (also this week's required meeting) | Sun Nov 22 | Google Doc minutes |
+  | Everyone | Review call on Google Meet (also this week's required meeting; Henry takes notes) | Sun Nov 22 | [#68](https://github.com/MehulPardeshi/de-group5-project/issues/68) |
   | Mehul | Submit the PDF and video on Canvas | Mon Nov 23, 9 pm | [#21](https://github.com/MehulPardeshi/de-group5-project/issues/21) |
 
   Already done: OurAirports (Mehul) and NOAA weather (Henry), including their B and C sections; Part A of the PDF.
@@ -91,7 +91,7 @@ _Updated Nov 17, 2026. The project manager keeps this section current._
 
 ## How we work
 - **Every task is a GitHub issue,** and the [project board](https://github.com/users/MehulPardeshi/projects/2) shows them with due dates.
-- **All work goes through pull requests.** Never push to `main`.
+- **All work goes through pull requests.** `main` is protected, so direct pushes are blocked.
   - **To edit a file in an existing PR on the website:** open the PR, go to **Files changed**, choose **⋯ → Edit file**, make the edit, then **Commit changes** to the PR's branch.
   - **To add a new file:** use **Add file → Create new file**, choose **Create a new branch**, then **Propose changes**.
   - **In the PR description:** write `Part of #<issue>`, or `Closes #<issue>` when the task is finished.
