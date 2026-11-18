@@ -17,7 +17,7 @@ A teammate has asked you for help with our course project. Read this whole file 
 | @yanglin4ni | Yang Lin (goes by Henry) | |
 
 ## Current status
-_Updated Nov 17, 2026. The project manager keeps this section current._
+_Updated Nov 17, 2026 (evening). The project manager keeps this section current._
 
 - **Topic:** flight delays and weather. Project manager: Mehul.
 - **Milestone 1** (proposal) was due Mon Nov 9; Sowmya submitted it (confirmation pending in [#12](https://github.com/MehulPardeshi/de-group5-project/issues/12)). The final text is in the Google Doc's "Project Proposal" tab, and the doc is shared with all instructors and TAs.
@@ -26,7 +26,7 @@ _Updated Nov 17, 2026. The project manager keeps this section current._
   - NOAA weather: raw JSON in Atlas, profiling and `clean.noaa_daily` done ([PR #62](https://github.com/MehulPardeshi/de-group5-project/pull/62)). Data runs Jan 2025 through **Aug 2026**, so BTS should load through the same month.
   - BTS and Storm Events: raw loads were due Sun Nov 15 and aren't on GitHub yet (as of Nov 17). Storm Events files are downloaded; they were committed by mistake and removed in [PR #66](https://github.com/MehulPardeshi/de-group5-project/pull/66), so keep downloads in `data/`.
 - **Google Doc:** the "Milestone 2" tab has a section for each owner (Part B data sources, Part C quality and cleaning). The Sat Nov 14 check-in was held in WhatsApp; its notes are in the minutes tab.
-- **Now: Milestone 2**, due **Mon Nov 23, 11:59 pm**: a 3-4 page PDF plus a 5-minute video on data sources, ingestion and initial cleaning. Late work is not accepted.
+- **Now: Milestone 2**, due **Mon Nov 23, 11:59 pm**: a 3-4 page PDF plus a 5-minute video on data sources, ingestion and initial cleaning. Late work is not accepted. The instructors will post Canvas instructions for submitting the video link (Piazza @39).
 - **Each person owns one dataset end to end** (acquire, load raw, profile, clean, write its PDF section, record about 1 minute of video):
 
   | Owner | Dataset | Issue | Stored in |
@@ -50,7 +50,7 @@ _Updated Nov 17, 2026. The project manager keeps this section current._
   | Sowmya | Confirm the Milestone 1 Canvas submission | Now | [#12](https://github.com/MehulPardeshi/de-group5-project/issues/12) |
   | Mehul | Assemble and trim the PDF | Sat Nov 21 | [#19](https://github.com/MehulPardeshi/de-group5-project/issues/19) |
   | Joshua | Edit the clips into one video, under 5:00 | Sat Nov 21 | [#20](https://github.com/MehulPardeshi/de-group5-project/issues/20) |
-  | Everyone | Review call on Google Meet (also this week's required meeting; Henry takes notes) | Sun Nov 22 | [#68](https://github.com/MehulPardeshi/de-group5-project/issues/68) |
+  | Everyone | Weekly meeting + Milestone 2 review on Google Meet, cameras on (Henry takes notes) | Sat Nov 21, 11am | [#68](https://github.com/MehulPardeshi/de-group5-project/issues/68) |
   | Mehul | Submit the PDF and video on Canvas | Mon Nov 23, 9 pm | [#21](https://github.com/MehulPardeshi/de-group5-project/issues/21) |
 
   Already done: OurAirports (Mehul) and NOAA weather (Henry), including their B and C sections; Part A of the PDF.
@@ -66,13 +66,19 @@ _Updated Nov 17, 2026. The project manager keeps this section current._
   | Sat Nov 14 | Weekly check-in (held in WhatsApp; notes in the Google Doc) |
   | Sun Nov 15 | Every dataset loaded raw |
   | Nov 16-17 | Midterm, no project work |
-  | Thu Nov 19 | Profiling, quality log and first cleaning done |
+  | Thu Nov 19 | Profiling, quality log and first cleaning done (course Assignment 4 is also due) |
   | Fri Nov 20 | Each person's PDF section (Google Doc, Milestone 2 tab) and video clip done |
   | Sat Nov 21 | Mehul assembles the PDF ([#19](https://github.com/MehulPardeshi/de-group5-project/issues/19)); Joshua edits the video ([#20](https://github.com/MehulPardeshi/de-group5-project/issues/20)) |
-  | Sun Nov 22 | Team review meeting |
+  | Sat Nov 21, 11am | Weekly meeting + Milestone 2 review ([#68](https://github.com/MehulPardeshi/de-group5-project/issues/68)) |
+  | Sun Nov 22 | Last fixes to the PDF and video |
+  | Tue Nov 24 (proposed) | Thanksgiving-week meeting: M2 wrap-up, M3 kickoff |
   | Mon Nov 23, 9 pm | Mehul submits ([#21](https://github.com/MehulPardeshi/de-group5-project/issues/21)) |
 
-- **Meetings:** weekly, online, with the time posted in WhatsApp. Decisions are made in chat beforehand, and meetings confirm who does what.
+- **Meetings:** every **Saturday at 11am on Google Meet**, cameras on. Tracker: [#2](https://github.com/MehulPardeshi/de-group5-project/issues/2).
+  - Per Piazza @39 (Nov 17), only **live** meetings count: in person or video. **WhatsApp or Slack threads do not**, so the Nov 14 WhatsApp check-in didn't count.
+  - Thanksgiving week: meet Mon Nov 23 or Tue Nov 24, or hold two meetings Nov 30-Dec 6.
+  - The teaching team needs **Editor** access to the Google Doc, not Viewer, because they check its version history.
+  - Chat is still for day-to-day coordination.
 
 ## What to do first
 1. **Ask the teammate for their GitHub username** if you don't know it, and tell them which name it matches.
