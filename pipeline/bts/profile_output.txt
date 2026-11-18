@@ -1,0 +1,127 @@
+                               source_file                                |   rows   
+--------------------------------------------------------------------------+----------
+ On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_10.csv |   605844
+ On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_11.csv |   570550
+ On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_12.csv |   582304
+ On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_1.csv  |   539747
+ On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_2.csv  |   504884
+ On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_3.csv  |   600872
+ On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_4.csv  |   583950
+ On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_5.csv  |   605648
+ On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_6.csv  |   611575
+ On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_7.csv  |   631428
+ On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_8.csv  |   602378
+ On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_9.csv  |   562439
+ On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2026_1.csv  |   544003
+ On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2026_2.csv  |   515037
+ On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2026_3.csv  |   612102
+ On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2026_4.csv  |   597919
+ On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2026_5.csv  |   611735
+ On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2026_6.csv  |   607577
+ On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2026_7.csv  |   631970
+ On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2026_8.csv  |   608389
+ TOTAL                                                                    | 11730351
+(21 rows)
+
+ first_date | last_date  | distinct_dates | bad_dates 
+------------+------------+----------------+-----------
+ 2025-01-01 | 2026-08-31 |            608 |         0
+(1 row)
+
+ duplicate_groups | extra_rows 
+------------------+------------
+                0 |          0
+(1 row)
+
+ cancelled | diverted | both 
+-----------+----------+------
+    206801 |    35199 |    0
+(1 row)
+
+  code   | cancelled |   rows   
+---------+-----------+----------
+ A       | 1.00      |    42965
+ B       | 1.00      |   132935
+ (blank) | 0.00      | 11523550
+ C       | 1.00      |    30775
+ D       | 1.00      |      126
+(5 rows)
+
+ blank_tail_number | blank_airport | flown_no_dep_time | completed_no_arr_delay 
+-------------------+---------------+-------------------+------------------------
+             27065 |             0 |                 0 |                      1
+(1 row)
+
+ late_15_plus | late_with_causes | late_without_causes | causes_but_not_late 
+--------------+------------------+---------------------+---------------------
+      2620457 |          2620456 |                   1 |                   0
+(1 row)
+
+ rows_with_causes | causes_equal_delay | causes_differ 
+------------------+--------------------+---------------
+          2620456 |            2620309 |           147
+(1 row)
+
+ crs_dep_2400 | dep_2400 | crs_arr_2400 | arr_2400 
+--------------+----------+--------------+----------
+            1 |     1255 |            4 |     6319
+(1 row)
+
+ bad_crs_dep | bad_dep | bad_crs_arr | bad_arr 
+-------------+---------+-------------+---------
+           0 |       0 |           0 |       0
+(1 row)
+
+ min_dep_delay | max_dep_delay | min_arr_delay | max_arr_delay | min_distance | max_distance | min_air_time | max_air_time | non_positive_distance | non_positive_air_time 
+---------------+---------------+---------------+---------------+--------------+--------------+--------------+--------------+-----------------------+-----------------------
+       -115.00 |       4380.00 |       -128.00 |       4381.00 |        31.00 |      5095.00 |         6.00 |       953.00 |                     0 |                     0
+(1 row)
+
+ dep_delay_over_24h | arr_delay_over_24h 
+--------------------+--------------------
+               1167 |               1161
+(1 row)
+
+ flightdate | reporting_airline | flight_number_reporting_airline | origin | dest | crsdeptime | deptime | arrdelay 
+------------+-------------------+---------------------------------+--------+------+------------+---------+----------
+ 2026-08-25 | AA                | 1404                            | DEN    | PHX  | 0829       | 0929    | 4381.00
+ 2025-09-24 | AA                | 797                             | MSN    | DFW  | 0640       | 0712    | 4336.00
+ 2025-10-20 | AA                | 1276                            | IAH    | ORD  | 0600       | 1555    | 3500.00
+ 2026-08-21 | AA                | 2823                            | OMA    | DFW  | 1159       | 2137    | 3432.00
+ 2026-07-12 | AA                | 2324                            | BGR    | ORD  | 0655       | 1527    | 3425.00
+ 2025-02-24 | AA                | 3063                            | SJU    | PHL  | 0600       | 1443    | 3407.00
+ 2026-01-29 | AA                | 1652                            | SDF    | DFW  | 0740       | 1519    | 3339.00
+ 2025-01-28 | AA                | 2420                            | IAH    | DFW  | 1001       | 1659    | 3282.00
+ 2025-03-24 | AA                | 2241                            | RSW    | CLT  | 0800       | 1448    | 3275.00
+ 2025-05-27 | AA                | 1347                            | IAH    | MIA  | 0730       | 1255    | 3241.00
+(10 rows)
+
+ diverted |   rows   | has_div_landing | has_div1_airport | reached_dest 
+----------+----------+-----------------+------------------+--------------
+ 0.00     | 11695152 |            1339 |             1341 |            0
+ 1.00     |    35199 |           35199 |            35199 |        31179
+(2 rows)
+
+ reporting_airline |  rows   
+-------------------+---------
+ WN                | 2319717
+ DL                | 1721263
+ AA                | 1641071
+ OO                | 1416733
+ UA                | 1354575
+ YX                |  592269
+ MQ                |  517046
+ AS                |  473194
+ OH                |  411822
+ B6                |  397034
+ F9                |  345485
+ NK                |  241717
+ G4                |  218341
+ HA                |   80084
+(14 rows)
+
+ bad_airport_code | same_origin_dest | origin_airports | dest_airports 
+------------------+------------------+-----------------+---------------
+                0 |                0 |             361 |           361
+(1 row)
+
