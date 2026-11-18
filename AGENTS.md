@@ -71,8 +71,8 @@ _Updated Nov 17, 2026 (evening). The project manager keeps this section current.
   | Sat Nov 21 | Mehul assembles the PDF ([#19](https://github.com/MehulPardeshi/de-group5-project/issues/19)); Joshua edits the video ([#20](https://github.com/MehulPardeshi/de-group5-project/issues/20)) |
   | Sat Nov 21, 11am | Weekly meeting + Milestone 2 review ([#68](https://github.com/MehulPardeshi/de-group5-project/issues/68)) |
   | Sun Nov 22 | Last fixes to the PDF and video |
-  | Tue Nov 24 (proposed) | Thanksgiving-week meeting: M2 wrap-up, M3 kickoff |
   | Mon Nov 23, 9 pm | Mehul submits ([#21](https://github.com/MehulPardeshi/de-group5-project/issues/21)) |
+  | Tue Nov 24 (proposed) | Thanksgiving-week meeting: M2 wrap-up, M3 kickoff |
 
 - **Meetings:** every **Saturday at 11am on Google Meet**, cameras on. Tracker: [#2](https://github.com/MehulPardeshi/de-group5-project/issues/2).
   - Per Piazza @39 (Nov 17), only **live** meetings count: in person or video. **WhatsApp or Slack threads do not**, so the Nov 14 WhatsApp check-in didn't count.
