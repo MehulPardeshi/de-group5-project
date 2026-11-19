@@ -1,0 +1,20 @@
+# BTS rows for docs/data_quality_log.md
+
+Counts are from the full load (Jan 2025-Aug 2026, 11,730,351 rows) on Nov 18, 2026.
+The full output of `profile.sql` is in `profile_output.txt`. These rows have been
+copied into the team log.
+
+| Dataset | Issue found | Rows affected | Severity | How we handled it | Owner | Date |
+| --- | --- | --- | --- | --- | --- | --- |
+| BTS on-time | Midnight written as "2400" instead of "0000" | 1,255 departure, 6,319 arrival, 1 scheduled departure, 4 scheduled arrival | recoverable | Converted "2400" to 00:00 when turning the times into TIME values in clean. Raw keeps the original text. | Sowmya | 2026-11-18 |
+| BTS on-time | Delay cause columns are only filled when the arrival delay is 15+ minutes | 2,620,457 flights 15+ min late; 2,620,456 with causes; 0 with causes but not late | recoverable | Left the causes NULL for flights under 15 minutes late, as BTS intends. The one late flight with no causes (F9 2791, MCO-ORD, 2026-07-02, 240 min late) was kept as-is. | Sowmya | 2026-11-18 |
+| BTS on-time | Delay causes add up to less than the arrival delay | 147, all Southwest (WN), mostly 2026; short by 49 to 820 minutes | recoverable | Kept the reported values. Every other airline's causes add up exactly, so this looks like a Southwest reporting issue. Analysis that splits delay by cause should note it. | Sowmya | 2026-11-18 |
+| BTS on-time | Blank tail number | 27,065 | recoverable | Kept the flights and stored the tail number as NULL. Tail number isn't needed for the weather join. | Sowmya | 2026-11-18 |
+| BTS on-time | Delays longer than 24 hours | 1,161 arrival, 1,167 departure; longest 4,381 min (about 3 days) | recoverable | Kept them. They look like real long delays, not typos, but are flagged in `profile.sql` so analysis can exclude them if needed. | Sowmya | 2026-11-18 |
+| BTS on-time | Cancelled flights have no times or delays, and the reason is a one-letter code | 206,801 cancelled (A 42,965, B 132,935, C 30,775, D 126); 197,703 never departed | recoverable | Kept the cancelled flights with NULL times and delays. Added a `cancellation_reason` column (A carrier, B weather, C national air system, D security). | Sowmya | 2026-11-18 |
+| BTS on-time | Diverted flights have no arrival delay | 35,199 | recoverable | Kept them with `arr_delay` NULL and `diverted` = true. The Div1-Div5 details stay in raw only. | Sowmya | 2026-11-18 |
+| BTS on-time | Non-diverted flights with diversion details, mostly `DivAirportLandings` = 9, a value the BTS readme doesn't explain | 1,341 (1,191 of them cancelled) | recoverable | Left as-is in raw and documented. The diversion columns aren't carried into clean. | Sowmya | 2026-11-18 |
+| BTS on-time | Flight neither cancelled nor diverted but with no arrival time or delay | 1 (YX 5859, JFK-MVY, 2025-09-06) | recoverable | Kept it with NULL arrival fields. | Sowmya | 2026-11-18 |
+| BTS on-time | Blanks come two ways: unquoted blanks load as NULL, quoted `""` loads as an empty string | 27,065 tail numbers and 197,703 departure times are `""` | recoverable | Profile checks and clean.sql use `NULLIF(BTRIM(x), '')` so both count as missing. All blanks are NULL in clean. | Sowmya | 2026-11-18 |
+| BTS on-time | Every CSV line ends with a comma, giving an extra empty 110th field | all 11,730,351 rows; 0 non-empty | recoverable | Stored in a `trailing_empty` column in raw so COPY doesn't fail. Dropped in clean. | Sowmya | 2026-11-18 |
+| BTS on-time | Duplicate flights (same date, airline, flight number, route and scheduled departure) | 0 | recoverable | None found. clean.sql still deduplicates with ROW_NUMBER, keeping the latest load, so a month loaded twice can't double-count. | Sowmya | 2026-11-18 |
