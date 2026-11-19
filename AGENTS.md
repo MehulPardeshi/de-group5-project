@@ -17,16 +17,17 @@ A teammate has asked you for help with our course project. Read this whole file 
 | @yanglin4ni | Yang Lin (goes by Henry) | |
 
 ## Current status
-_Updated Nov 17, 2026 (evening). The project manager keeps this section current._
+_Updated Nov 19, 2026. The project manager keeps this section current._
 
 - **Topic:** flight delays and weather. Project manager: Mehul.
-- **Milestone 1** (proposal) was due Mon Nov 9; Sowmya submitted it (confirmation pending in [#12](https://github.com/MehulPardeshi/de-group5-project/issues/12)). The final text is in the Google Doc's "Project Proposal" tab, and the doc is shared with all instructors and TAs.
+- **Milestone 1** (proposal) was due Mon Nov 9; Sowmya submitted it (confirmed in [#12](https://github.com/MehulPardeshi/de-group5-project/issues/12)). The final text is in the Google Doc's "Project Proposal" tab, and the doc is shared with all instructors and TAs.
 - **Progress:**
   - OurAirports: raw load, cleaning and quality log done ([PR #55](https://github.com/MehulPardeshi/de-group5-project/pull/55), [PR #57](https://github.com/MehulPardeshi/de-group5-project/pull/57)).
   - NOAA weather: raw JSON in Atlas, profiling and `clean.noaa_daily` done ([PR #62](https://github.com/MehulPardeshi/de-group5-project/pull/62)). Data runs Jan 2025 through **Aug 2026**, so BTS should load through the same month.
-  - BTS and Storm Events: raw loads were due Sun Nov 15 and aren't on GitHub yet (as of Nov 17). Storm Events files are downloaded; they were committed by mistake and removed in [PR #66](https://github.com/MehulPardeshi/de-group5-project/pull/66), so keep downloads in `data/`.
+  - BTS: raw load (11,730,351 flights), profiling, quality log and `clean.bts_flights` done ([PR #74](https://github.com/MehulPardeshi/de-group5-project/pull/74)). B1 and C1 are in the Google Doc.
+  - Storm Events: **not on GitHub yet** (raw load was due Sun Nov 15, cleaning Thu Nov 19). The files are downloaded; keep them in `data/`, not in git ([PR #66](https://github.com/MehulPardeshi/de-group5-project/pull/66)).
 - **Google Doc:** the "Milestone 2" tab has a section for each owner (Part B data sources, Part C quality and cleaning). The Sat Nov 14 check-in was held in WhatsApp; its notes are in the minutes tab.
-- **Now: Milestone 2**, due **Mon Nov 23, 11:59 pm**: a 3-4 page PDF plus a 5-minute video on data sources, ingestion and initial cleaning. Late work is not accepted. The instructors will post Canvas instructions for submitting the video link (Piazza @39).
+- **Now: Milestone 2**, due **Mon Nov 23, 11:59 pm**: a 3-4 page PDF plus a 5-minute video on data sources, ingestion and initial cleaning. Late work is not accepted. The instructors will post Canvas instructions for submitting the video link (Piazza post 39).
 - **Each person owns one dataset end to end** (acquire, load raw, profile, clean, write its PDF section, record about 1 minute of video):
 
   | Owner | Dataset | Issue | Stored in |
@@ -40,20 +41,16 @@ _Updated Nov 17, 2026 (evening). The project manager keeps this section current.
 
   | Who | Task | Due | Where |
   | --- | --- | --- | --- |
-  | Sowmya | BTS raw load through Aug 2026 | Sun Nov 15 | [#47](https://github.com/MehulPardeshi/de-group5-project/issues/47) |
-  | Joshua | Storm Events raw load | Sun Nov 15 | [#49](https://github.com/MehulPardeshi/de-group5-project/issues/49) |
-  | Sowmya, Joshua | Profiling, quality log rows, clean table | Thu Nov 19 | #47, #49 |
-  | Sowmya | B1 and C1 in the Google Doc's Milestone 2 tab | Fri Nov 20 | #47 |
+  | Joshua | Storm Events raw load, profiling, quality log rows, clean table (overdue) | ASAP | [#49](https://github.com/MehulPardeshi/de-group5-project/issues/49) |
   | Joshua | B3 and C3 in the Milestone 2 tab | Fri Nov 20 | #49 |
   | Everyone | ~1 minute video clip, Drive link to Joshua | Fri Nov 20 | #47-#50 |
   | Everyone | One line under "Acknowledgment of help received" in the Milestone 2 tab | Fri Nov 20 | [#69](https://github.com/MehulPardeshi/de-group5-project/issues/69) |
-  | Sowmya | Confirm the Milestone 1 Canvas submission | Now | [#12](https://github.com/MehulPardeshi/de-group5-project/issues/12) |
   | Mehul | Assemble and trim the PDF | Sat Nov 21 | [#19](https://github.com/MehulPardeshi/de-group5-project/issues/19) |
   | Joshua | Edit the clips into one video, under 5:00 | Sat Nov 21 | [#20](https://github.com/MehulPardeshi/de-group5-project/issues/20) |
   | Everyone | Weekly meeting + Milestone 2 review on Google Meet, cameras on (Henry takes notes) | Sat Nov 21, 11am | [#68](https://github.com/MehulPardeshi/de-group5-project/issues/68) |
   | Mehul | Submit the PDF and video on Canvas | Mon Nov 23, 9 pm | [#21](https://github.com/MehulPardeshi/de-group5-project/issues/21) |
 
-  Already done: OurAirports (Mehul) and NOAA weather (Henry), including their B and C sections; Part A of the PDF.
+  Already done: OurAirports (Mehul), NOAA weather (Henry) and BTS (Sowmya), including their B and C sections; Part A of the PDF. The Milestone 2 tab exports to 3 pages without Storm Events. The Sat Nov 21 meeting agenda is in the Google Doc.
 
 - **Date range:** Jan 2025 through **Aug 2026** (the latest BTS month when the weather data was loaded). Every dataset uses this range.
 - **Databases:** PostgreSQL runs **locally in Docker** for each person (`docker compose up -d`; setup in [pipeline/setup](pipeline/setup/README.md)). MongoDB Atlas (cloud, shared) holds the NOAA JSON. AWS RDS was blocked on our account.
@@ -75,7 +72,7 @@ _Updated Nov 17, 2026 (evening). The project manager keeps this section current.
   | Tue Nov 24 (proposed) | Thanksgiving-week meeting: M2 wrap-up, M3 kickoff |
 
 - **Meetings:** every **Saturday at 11am on Google Meet**, cameras on. Tracker: [#2](https://github.com/MehulPardeshi/de-group5-project/issues/2).
-  - Per Piazza @39 (Nov 17), only **live** meetings count: in person or video. **WhatsApp or Slack threads do not**, so the Nov 14 WhatsApp check-in didn't count.
+  - Per Piazza post 39 (Nov 17), only **live** meetings count: in person or video. **WhatsApp or Slack threads do not**, so the Nov 14 WhatsApp check-in didn't count.
   - Thanksgiving week: meet Mon Nov 23 or Tue Nov 24, or hold two meetings Nov 30-Dec 6.
   - The teaching team needs **Editor** access to the Google Doc, not Viewer, because they check its version history.
   - Chat is still for day-to-day coordination.

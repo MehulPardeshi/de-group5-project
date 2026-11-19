@@ -2,25 +2,23 @@
 
 **Owner:** Sowmya · **Issue:** [#47](https://github.com/MehulPardeshi/de-group5-project/issues/47) · **Stored in:** PostgreSQL `raw.bts_on_time`
 
-## Start here (raw load due Sun Nov 15; full Milestone 2 checklist on the issue)
+## Status: raw load, profiling and first cleaning done ([PR #74](https://github.com/MehulPardeshi/de-group5-project/pull/74))
 
-1. **Setup (15 min):** follow [pipeline/setup](../setup/README.md). Done when `check_connections.py` prints `PostgreSQL OK`.
-2. **Download one month first:** on the [BTS download page](https://www.transtats.bts.gov/DL_SelectFields.aspx?gnoyr_VQ=FGJ), get **January 2025** (one zip is about 500-600k flights). Save it to `data/bts/` (git ignores `data/`). Once one month loads, get the rest (Jan 2025 through **Aug 2026**, the same range as the weather data).
-3. **Write down** in `notes.md`: the URL, the download date, file names and sizes, row count, column names.
-4. **Raw table and load:** `raw.sql` creates `raw.bts_on_time` with every column as TEXT. `ingest.py` loads the CSV with COPY and checks the row count. This is the same pattern as `pipeline/ourairports/`.
-5. **For the call, have ready:** is setup working? Is the data downloaded? Anything blocking you?
+- 20 monthly files, Jan 2025 through Aug 2026: 11,730,351 flights in `raw.bts_on_time`, the same count in `clean.bts_flights` (no duplicates)
+- 12 quality issues in [docs/data_quality_log.md](../../docs/data_quality_log.md); full profiling output in `profile_output.txt`
+- Source details and how to run are in [notes.md](notes.md)
 
-**Stuck?** Say so in WhatsApp or on the call. Mehul's [ourairports](../ourairports) folder is a finished example of the same steps.
+Left for Milestone 2: Sowmya's ~1 minute video clip (see [#47](https://github.com/MehulPardeshi/de-group5-project/issues/47)).
 
 ## Files in this folder
 
-
-| File | What goes in it |
+| File | What it does |
 | --- | --- |
-| `ingest.py` (or a notebook) | Downloads or reads the source and loads it into raw storage |
-| `raw.sql` | Creates the raw table, with no constraints that could drop rows |
-| `profile.sql` | Quality checks on the raw table (missing values, duplicates, bad formats). Results go in `docs/data_quality_log.md` |
-| `clean.sql` | Builds the cleaned table in the `clean` schema from the raw one |
-| `notes.md` | Source URL, download date, files, size, row count, columns |
+| `raw.sql` | Creates `raw.bts_on_time`: all 109 CSV columns as TEXT, plus `trailing_empty`, `source_file` and `loaded_at` |
+| `ingest.py` | Loads the monthly zips from `data/bts/` with COPY and checks the row count (all months, or one month) |
+| `profile.sql` | Quality checks on the raw table; results in `profile_output.txt` |
+| `clean.sql` | Builds `clean.bts_flights`: typed, blanks to NULL, cancellation reasons, dedupe, join indexes |
+| `notes.md` | Source, download date, size, columns, how to run |
+| `quality_log_rows.md` | Copy of the BTS rows in the team quality log |
 
 Never commit the data files or passwords. Downloads go in the top-level `data/` folder, which git ignores.
