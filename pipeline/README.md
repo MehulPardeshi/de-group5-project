@@ -2,12 +2,12 @@
 
 One folder per dataset, so nobody edits the same files:
 
-| Folder | Dataset | Owner | Status (Nov 14) |
+| Folder | Dataset | Owner | Status (Nov 19) |
 | --- | --- | --- | --- |
 | [setup](setup) | Local PostgreSQL (Docker) and shared MongoDB Atlas | Mehul | Done |
-| [bts](bts) | BTS on-time flights | Sowmya | Raw load due Sun Nov 15 |
+| [bts](bts) | BTS on-time flights | Sowmya | Raw and clean done |
 | [noaa_weather](noaa_weather) | NOAA daily weather (JSON) | Yang | Raw and clean done |
-| [storm_events](storm_events) | NOAA Storm Events | Joshua | Raw load due Sun Nov 15 |
+| [storm_events](storm_events) | NOAA Storm Events | Joshua | Raw load overdue |
 | [ourairports](ourairports) | OurAirports | Mehul | Raw and clean done |
 
 **Layers** (the course requires raw data to be kept separate from cleaned data):
