@@ -10,6 +10,8 @@
 --   * Duplicate flights are removed, keeping the most recently loaded copy.
 --   * Columns we don't need (Div1-Div5 details, delay groups, IDs we don't join on) are left out.
 --     They stay in raw if we need them later.
+--   * Indexes on (origin, flight_date) and (dest, flight_date) make the weather join fast.
+--   * No rows are dropped except duplicates (there were 0), so clean has the same count as raw.
 
 DROP TABLE IF EXISTS clean.bts_flights;
 
