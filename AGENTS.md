@@ -17,16 +17,16 @@ A teammate has asked you for help with our course project. Read this whole file 
 | @yanglin4ni | Yang Lin (goes by Henry) | |
 
 ## Current status
-_Updated Nov 19, 2026. The project manager keeps this section current._
+_Updated Nov 21, 2026. The project manager keeps this section current._
 
 - **Topic:** flight delays and weather. Project manager: Mehul.
 - **Milestone 1** (proposal) was due Mon Nov 9; Sowmya submitted it (confirmed in [#12](https://github.com/MehulPardeshi/de-group5-project/issues/12)). The final text is in the Google Doc's "Project Proposal" tab, and the doc is shared with all instructors and TAs.
-  - **Graded 20/20.** The TA asked us to specify the analysis period, define "bad weather" and "usual" delay rates, and say how we pick the three busiest airports. The team decides these at the Sat Nov 21 meeting ([#76](https://github.com/MehulPardeshi/de-group5-project/issues/76)). NOAA weather covers only ATL, DFW, JFK, ORD and PIT.
+  - **Graded 20/20.** The TA asked us to specify the analysis period, define "bad weather" and "usual" delay rates, and say how we pick the three busiest airports. Everyone answered a decision form, and the team decides at the Sat Nov 21 meeting ([#76](https://github.com/MehulPardeshi/de-group5-project/issues/76)). By scheduled departures the top 3 are **ORD, DEN, ATL** (Sowmya's count on #76), but NOAA weather covers only ATL, DFW, JFK, ORD and PIT, so Denver has no weather yet. Henry's earlier draft definitions are in [PR #46](https://github.com/MehulPardeshi/de-group5-project/pull/46) (kept open for Milestone 3).
 - **Progress:**
   - OurAirports: raw load, cleaning and quality log done ([PR #55](https://github.com/MehulPardeshi/de-group5-project/pull/55), [PR #57](https://github.com/MehulPardeshi/de-group5-project/pull/57)).
   - NOAA weather: raw JSON in Atlas, profiling and `clean.noaa_daily` done ([PR #62](https://github.com/MehulPardeshi/de-group5-project/pull/62)). Data runs Jan 2025 through **Aug 2026**, so BTS should load through the same month.
   - BTS: raw load (11,730,351 flights), profiling, quality log and `clean.bts_flights` done ([PR #74](https://github.com/MehulPardeshi/de-group5-project/pull/74)). B1 and C1 are in the Google Doc.
-  - Storm Events: **not on GitHub yet** (raw load was due Sun Nov 15, cleaning Thu Nov 19). The files are downloaded; keep them in `data/`, not in git ([PR #66](https://github.com/MehulPardeshi/de-group5-project/pull/66)).
+  - Storm Events: only source notes are on GitHub ([PR #78](https://github.com/MehulPardeshi/de-group5-project/pull/78): 2025 file 73,351 rows, 2026 file 50,489 rows, 51 columns). No load script, raw table or clean table yet, and B3/C3 in the Google Doc are empty. The files are downloaded; keep them in `data/`, not in git ([PR #66](https://github.com/MehulPardeshi/de-group5-project/pull/66)).
 - **Google Doc:** the "Milestone 2" tab has a section for each owner (Part B data sources, Part C quality and cleaning). The Sat Nov 14 check-in was held in WhatsApp; its notes are in the minutes tab.
 - **Now: Milestone 2**, due **Mon Nov 23, 11:59 pm**: a 3-4 page PDF plus a 5-minute video on data sources, ingestion and initial cleaning. Late work is not accepted. The instructors will post Canvas instructions for submitting the video link (Piazza post 39).
 - **Each person owns one dataset end to end** (acquire, load raw, profile, clean, write its PDF section, record about 1 minute of video):
@@ -51,7 +51,7 @@ _Updated Nov 19, 2026. The project manager keeps this section current._
   | Everyone | Weekly meeting + Milestone 2 review on Google Meet, cameras on (Henry takes notes) | Sat Nov 21, 11am | [#68](https://github.com/MehulPardeshi/de-group5-project/issues/68) |
   | Mehul | Submit the PDF and video on Canvas | Mon Nov 23, 9 pm | [#21](https://github.com/MehulPardeshi/de-group5-project/issues/21) |
 
-  Already done: OurAirports (Mehul), NOAA weather (Henry) and BTS (Sowmya), including their B and C sections; Part A of the PDF. The Milestone 2 tab exports to 3 pages without Storm Events. The Sat Nov 21 meeting agenda is in the Google Doc.
+  Already done: OurAirports (Mehul), NOAA weather (Henry) and BTS (Sowmya), including their B and C sections; Part A of the PDF. The Milestone 2 tab already exports to 4 pages without Storm Events, so it needs trimming once B3/C3 are in. Acknowledgment lines are in from Henry and Joshua. The Sat Nov 21 meeting agenda is in the Google Doc.
 
 - **Date range:** Jan 2025 through **Aug 2026** (the latest BTS month when the weather data was loaded). Every dataset uses this range.
 - **Databases:** PostgreSQL runs **locally in Docker** for each person (`docker compose up -d`; setup in [pipeline/setup](pipeline/setup/README.md)). MongoDB Atlas (cloud, shared) holds the NOAA JSON. AWS RDS was blocked on our account.
