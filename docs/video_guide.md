@@ -1,6 +1,8 @@
 # Milestone 2 video guide
 
-The course asks for **one 5-minute video** showing our data sources, ingestion and initial cleaning. Each dataset owner records about **1 minute** of their own dataset, and Joshua joins the clips ([#20](https://github.com/MehulPardeshi/de-group5-project/issues/20)).
+> **Changed at the Nov 21 meeting:** the video is **voice-over only** (the professor said faces are welcome but not graded). Mehul assembles the video and shares each person's part and timing on Sun Nov 22. You write and record **your own narration** (about 1 minute; a phone MP3 is fine) and send it to Mehul by **Mon Nov 23, 12 pm**. The shot list below is still what each part should cover. See [#20](https://github.com/MehulPardeshi/de-group5-project/issues/20).
+
+The course asks for **one 5-minute video** showing our data sources, ingestion and initial cleaning. Each dataset owner covers about **1 minute** of their own dataset.
 
 This page lists **what to show**, not what to say. Under our team rule (no AI tools for graded work), everyone writes and speaks their own narration. A few notes on paper in your own words is plenty.
 
