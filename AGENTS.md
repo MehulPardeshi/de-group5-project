@@ -21,7 +21,7 @@ _Updated Nov 21, 2026. The project manager keeps this section current._
 
 - **Topic:** flight delays and weather. Project manager: Mehul.
 - **Milestone 1** (proposal) was due Mon Nov 9; Sowmya submitted it (confirmed in [#12](https://github.com/MehulPardeshi/de-group5-project/issues/12)). The final text is in the Google Doc's "Project Proposal" tab, and the doc is shared with all instructors and TAs.
-  - **Graded 20/20.** The TA asked us to specify the analysis period, define "bad weather" and "usual" delay rates, and say how we pick the three busiest airports. All four decision forms are in, and the agreed definitions are on [#76](https://github.com/MehulPardeshi/de-group5-project/issues/76): period Jan 2025 – Aug 2026; NOAA cutoffs for bad weather; Storm Events for severe weather; usual = monthly median of good-weather days; recovery = 2 days in a row within 5 points. **Still open (vote on #76 by Sun Nov 22, 6 pm):** busiest airports ORD, DEN, ATL (add Denver's weather) or ORD, ATL, DFW, plus the cancellation tolerance. These are for Milestone 3. Henry's earlier draft definitions are in [PR #46](https://github.com/MehulPardeshi/de-group5-project/pull/46) (kept open for Milestone 3).
+  - **Graded 20/20.** The TA asked us to specify the analysis period, define "bad weather" and "usual" delay rates, and say how we pick the three busiest airports. All four decision forms are in, and the agreed definitions are on [#76](https://github.com/MehulPardeshi/de-group5-project/issues/76): period Jan 2025 – Aug 2026; NOAA cutoffs for bad weather; Storm Events for severe weather; usual = monthly median of good-weather days; recovery = 2 days in a row within 5 points. **Busiest airports decided (3 of 4 votes): ORD, DEN, ATL**, so Denver's weather station is added for Milestone 3. **Still open (vote on #76 by Sun Nov 22, 6 pm):** the cancellation tolerance (5 or 1 point), tied 1-1. Henry's earlier draft definitions are in [PR #46](https://github.com/MehulPardeshi/de-group5-project/pull/46) (kept open for Milestone 3).
 - **Progress:**
   - OurAirports: raw load, cleaning and quality log done ([PR #55](https://github.com/MehulPardeshi/de-group5-project/pull/55), [PR #57](https://github.com/MehulPardeshi/de-group5-project/pull/57)).
   - NOAA weather: raw JSON in Atlas, profiling and `clean.noaa_daily` done ([PR #62](https://github.com/MehulPardeshi/de-group5-project/pull/62)). Data runs Jan 2025 through **Aug 2026**, so BTS should load through the same month.
@@ -47,16 +47,14 @@ _Updated Nov 21, 2026. The project manager keeps this section current._
   | Joshua | Profiling, quality log rows, clean table | Sun Nov 22, 12 pm | #49 |
   | Joshua | B3 and C3 in the Milestone 2 tab | Sun Nov 22, 6 pm | #49 |
   | Everyone | Cut 1-2 lines from your own B and C sections | Sun Nov 22, 6 pm | [#19](https://github.com/MehulPardeshi/de-group5-project/issues/19) |
-  | Mehul, Sowmya | Acknowledgment line in the Milestone 2 tab | Sun Nov 22, 6 pm | [#69](https://github.com/MehulPardeshi/de-group5-project/issues/69) |
-  | Everyone | Vote on the open definitions | Sun Nov 22, 6 pm | [#76](https://github.com/MehulPardeshi/de-group5-project/issues/76) |
-  | Henry | Meeting 3 minutes in the Google Doc | Sun Nov 22 | [#68](https://github.com/MehulPardeshi/de-group5-project/issues/68) |
-  | Mehul | Trim and export the PDF; share each person's voice-over part and timing | Sun Nov 22, night | #19, [#20](https://github.com/MehulPardeshi/de-group5-project/issues/20) |
+    | Sowmya, Joshua | Vote on the cancellation tolerance | Sun Nov 22, 6 pm | [#76](https://github.com/MehulPardeshi/de-group5-project/issues/76) |
+    | Mehul | Trim and export the PDF; share each person's voice-over part and timing | Sun Nov 22, night | #19, [#20](https://github.com/MehulPardeshi/de-group5-project/issues/20) |
   | Everyone | Your own voice-over recording (about 1 min, phone MP3 is fine) to Mehul | Mon Nov 23, 12 pm | #20 |
   | Mehul | Assemble the video, under 5:00 | Mon Nov 23, 6 pm | #20 |
   | Sowmya | Submit the PDF and video on Canvas (Mehul backup) | Mon Nov 23, 9 pm | [#21](https://github.com/MehulPardeshi/de-group5-project/issues/21) |
-  | Everyone | Pick the Thanksgiving-week meeting (Tue Nov 24, or two meetings Nov 30-Dec 6) | Sun Nov 22 | [#2](https://github.com/MehulPardeshi/de-group5-project/issues/2) |
+  | Everyone | Meeting 4: Tue Nov 24, 8 pm, Google Meet (M2 wrap-up, M3 kickoff; agenda in the Google Doc) | Tue Nov 24 | [#2](https://github.com/MehulPardeshi/de-group5-project/issues/2) |
 
-  Already done: OurAirports (Mehul), NOAA weather (Henry) and BTS (Sowmya), including their B and C sections; Part A of the PDF. The Milestone 2 tab already exports to 4 pages without Storm Events, so it needs trimming once B3/C3 are in. Acknowledgment lines are in from Henry and Joshua.
+  Already done: OurAirports (Mehul), NOAA weather (Henry) and BTS (Sowmya), including their B and C sections; Part A of the PDF. The Milestone 2 tab already exports to 4 pages without Storm Events, so it needs trimming once B3/C3 are in. All four acknowledgment lines are in (#69 closed), and Henry's Meeting 3 minutes are in the Google Doc (#68 closed).
 
 - **Date range:** Jan 2025 through **Aug 2026** (the latest BTS month when the weather data was loaded). Every dataset uses this range.
 - **Databases:** PostgreSQL runs **locally in Docker** for each person (`docker compose up -d`; setup in [pipeline/setup](pipeline/setup/README.md)). MongoDB Atlas (cloud, shared) holds the NOAA JSON. AWS RDS was blocked on our account.
@@ -75,7 +73,7 @@ _Updated Nov 21, 2026. The project manager keeps this section current._
   | Sun Nov 22 | Joshua's B3/C3; everyone's trims; Mehul exports the PDF ([#19](https://github.com/MehulPardeshi/de-group5-project/issues/19)) |
   | Mon Nov 23, 12 pm | Voice-over recordings to Mehul ([#20](https://github.com/MehulPardeshi/de-group5-project/issues/20)) |
   | Mon Nov 23, 9 pm | Sowmya submits; Mehul is backup ([#21](https://github.com/MehulPardeshi/de-group5-project/issues/21)) |
-  | Tue Nov 24 (proposed) | Thanksgiving-week meeting: M2 wrap-up, M3 kickoff |
+  | Tue Nov 24, 8 pm | Meeting 4 (confirmed): M2 wrap-up, M3 kickoff ([#2](https://github.com/MehulPardeshi/de-group5-project/issues/2)) |
 
 - **Meetings:** every **Saturday at 11am on Google Meet**, cameras on. Tracker: [#2](https://github.com/MehulPardeshi/de-group5-project/issues/2).
   - Per Piazza post 39 (Nov 17), only **live** meetings count: in person or video. **WhatsApp or Slack threads do not**, so the Nov 14 WhatsApp check-in didn't count.
