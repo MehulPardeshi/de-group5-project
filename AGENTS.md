@@ -17,16 +17,16 @@ A teammate has asked you for help with our course project. Read this whole file 
 | @yanglin4ni | Yang Lin (goes by Henry) | |
 
 ## Current status
-_Updated Nov 21, 2026. The project manager keeps this section current._
+_Updated Nov 22, 2026. The project manager keeps this section current._
 
 - **Topic:** flight delays and weather. Project manager: Mehul.
 - **Milestone 1** (proposal) was due Mon Nov 9; Sowmya submitted it (confirmed in [#12](https://github.com/MehulPardeshi/de-group5-project/issues/12)). The final text is in the Google Doc's "Project Proposal" tab, and the doc is shared with all instructors and TAs.
-  - **Graded 20/20.** The TA asked us to specify the analysis period, define "bad weather" and "usual" delay rates, and say how we pick the three busiest airports. All four decision forms are in, and the agreed definitions are on [#76](https://github.com/MehulPardeshi/de-group5-project/issues/76): period Jan 2025 – Aug 2026; NOAA cutoffs for bad weather; Storm Events for severe weather; usual = monthly median of good-weather days; recovery = 2 days in a row within 5 points. **Busiest airports decided (3 of 4 votes): ORD, DEN, ATL**, so Denver's weather station is added for Milestone 3. **Still open (vote on #76 by Sun Nov 22, 6 pm):** the cancellation tolerance (5 or 1 point), tied 1-1. Henry's earlier draft definitions are in [PR #46](https://github.com/MehulPardeshi/de-group5-project/pull/46) (kept open for Milestone 3).
+  - **Graded 20/20.** The TA asked us to specify the analysis period, define "bad weather" and "usual" delay rates, and say how we pick the three busiest airports. All four decision forms are in, and the agreed definitions are on [#76](https://github.com/MehulPardeshi/de-group5-project/issues/76): period Jan 2025 – Aug 2026; NOAA cutoffs for bad weather; Storm Events for severe weather; usual = monthly median of good-weather days; recovery = 2 days in a row within 5 points. **Busiest airports decided (3 of 4 votes): ORD, DEN, ATL**, so Denver's weather station is added for Milestone 3. **Still open (vote on #76 by Sun Nov 22, 6 pm):** the cancellation tolerance, 2-1 for 5 points (Mehul, Sowmya; Henry 1 point); Joshua's vote pending. Henry's earlier draft definitions are in [PR #46](https://github.com/MehulPardeshi/de-group5-project/pull/46) (kept open for Milestone 3).
 - **Progress:**
   - OurAirports: raw load, cleaning and quality log done ([PR #55](https://github.com/MehulPardeshi/de-group5-project/pull/55), [PR #57](https://github.com/MehulPardeshi/de-group5-project/pull/57)).
   - NOAA weather: raw JSON in Atlas, profiling and `clean.noaa_daily` done ([PR #62](https://github.com/MehulPardeshi/de-group5-project/pull/62)). Data runs Jan 2025 through **Aug 2026**, so BTS should load through the same month.
   - BTS: raw load (11,730,351 flights), profiling, quality log and `clean.bts_flights` done ([PR #74](https://github.com/MehulPardeshi/de-group5-project/pull/74)). B1 and C1 are in the Google Doc.
-  - Storm Events: only source notes are on GitHub ([PR #78](https://github.com/MehulPardeshi/de-group5-project/pull/78): 2025 file 73,351 rows, 2026 file 50,489 rows, 51 columns). No load script, raw table or clean table yet, and B3/C3 in the Google Doc are empty. The files are downloaded; keep them in `data/`, not in git ([PR #66](https://github.com/MehulPardeshi/de-group5-project/pull/66)).
+  - Storm Events: source notes ([PR #78](https://github.com/MehulPardeshi/de-group5-project/pull/78): 2025 file 73,351 rows, 2026 file 50,489 rows, 51 columns) and the load, profiling and clean scripts ([PR #83](https://github.com/MehulPardeshi/de-group5-project/pull/83), Nov 22) are on GitHub. Still missing: the row-count result, quality log rows, and C3 in the Google Doc (B3 started Nov 22). The files are downloaded; keep them in `data/`, not in git ([PR #66](https://github.com/MehulPardeshi/de-group5-project/pull/66)).
 - **Google Doc:** the "Milestone 2" tab has a section for each owner (Part B data sources, Part C quality and cleaning). The Sat Nov 14 check-in was held in WhatsApp; its notes are in the minutes tab.
 - **Now: Milestone 2**, due **Mon Nov 23, 11:59 pm**: a 3-4 page PDF plus a 5-minute video on data sources, ingestion and initial cleaning. Late work is not accepted. **Sowmya submits by 9 pm; Mehul is backup** (decided at the Nov 21 meeting). Check Canvas for the video-link instructions (Piazza post 39).
 - **Sat Nov 21 meeting** (live, all four, cameras on; held, #68): the video is **voice-over only** (faces not graded); each person records their own narration and Mehul assembles the video. Each owner trims 1-2 lines of their own PDF sections; Mehul shortens Part A and removes the instruction line and [Owner] tags. Questions and reviews go on GitHub, not WhatsApp. Henry writes the minutes.
@@ -43,12 +43,12 @@ _Updated Nov 21, 2026. The project manager keeps this section current._
 
   | Who | Task | Due | Where |
   | --- | --- | --- | --- |
-  | Joshua | Storm Events raw load and PR (overdue) | Sat Nov 21, tonight | [#49](https://github.com/MehulPardeshi/de-group5-project/issues/49) |
+  | Joshua | Storm Events row-count result on #49 (scripts merged in #83) | Sun Nov 22, 12 pm | [#49](https://github.com/MehulPardeshi/de-group5-project/issues/49) |
   | Joshua | Profiling, quality log rows, clean table | Sun Nov 22, 12 pm | #49 |
   | Joshua | B3 and C3 in the Milestone 2 tab | Sun Nov 22, 6 pm | #49 |
   | Everyone | Cut 1-2 lines from your own B and C sections | Sun Nov 22, 6 pm | [#19](https://github.com/MehulPardeshi/de-group5-project/issues/19) |
-    | Sowmya, Joshua | Vote on the cancellation tolerance | Sun Nov 22, 6 pm | [#76](https://github.com/MehulPardeshi/de-group5-project/issues/76) |
-    | Mehul | Trim and export the PDF; share each person's voice-over part and timing | Sun Nov 22, night | #19, [#20](https://github.com/MehulPardeshi/de-group5-project/issues/20) |
+  | Joshua | Vote on the cancellation tolerance (now 2-1 for 5 points) | Sun Nov 22, 6 pm | [#76](https://github.com/MehulPardeshi/de-group5-project/issues/76) |
+  | Mehul | Trim and export the PDF; share each person's voice-over part and timing | Sun Nov 22, night | #19, [#20](https://github.com/MehulPardeshi/de-group5-project/issues/20) |
   | Everyone | Your own voice-over recording (about 1 min, phone MP3 is fine) to Mehul | Mon Nov 23, 12 pm | #20 |
   | Mehul | Assemble the video, under 5:00 | Mon Nov 23, 6 pm | #20 |
   | Sowmya | Submit the PDF and video on Canvas (Mehul backup) | Mon Nov 23, 9 pm | [#21](https://github.com/MehulPardeshi/de-group5-project/issues/21) |
