@@ -27,4 +27,4 @@ Everyone adds a row for every problem found while profiling or cleaning their da
 | BTS on-time | Every CSV line ends with a comma, giving an extra empty 110th field | all 11,730,351 rows; 0 non-empty | recoverable | Stored in a `trailing_empty` column in raw so COPY doesn't fail. Dropped in clean. | Sowmya | 2026-11-18 |
 | BTS on-time | Duplicate flights (same date, airline, flight number, route and scheduled departure) | 0 | recoverable | None found. clean.sql still deduplicates with ROW_NUMBER, keeping the latest load, so a month loaded twice can't double-count. | Sowmya | 2026-11-18 |
 | NOAA storm events | Month of August was missing from 2026 csv | 0 | recoverable | Data extends from January 2025 to July 2026 so covers at least 18 months. | Josh | 2026-11-23 |
-| NOAA storm events | 29,177 blank damage values | 29,177 | recoverable | Conver the blank damage values into NULL values. | Josh | 2026-11-23 |
+| NOAA storm events | 29,177 blank damage values | 29,177 rows | recoverable | Converted the blank damage values into NULL values. | Josh | 2026-11-23 |
