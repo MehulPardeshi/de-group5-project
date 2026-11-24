@@ -17,7 +17,7 @@ A teammate has asked you for help with our course project. Read this whole file 
 | @yanglin4ni | Yang Lin (goes by Henry) | |
 
 ## Current status
-_Updated Nov 23, 2026. The project manager keeps this section current._
+_Updated Nov 23, 2026 (evening). The project manager keeps this section current._
 
 - **Topic:** flight delays and weather. Project manager: Mehul.
 - **Milestone 1** (proposal) was due Mon Nov 9; Sowmya submitted it (confirmed in [#12](https://github.com/MehulPardeshi/de-group5-project/issues/12)). The final text is in the Google Doc's "Project Proposal" tab, and the doc is shared with all instructors and TAs.
@@ -26,7 +26,7 @@ _Updated Nov 23, 2026. The project manager keeps this section current._
   - OurAirports: raw load, cleaning and quality log done ([PR #55](https://github.com/MehulPardeshi/de-group5-project/pull/55), [PR #57](https://github.com/MehulPardeshi/de-group5-project/pull/57)).
   - NOAA weather: raw JSON in Atlas, profiling and `clean.noaa_daily` done ([PR #62](https://github.com/MehulPardeshi/de-group5-project/pull/62)). Data runs Jan 2025 through **Aug 2026**, so BTS should load through the same month.
   - BTS: raw load (11,730,351 flights), profiling, quality log and `clean.bts_flights` done ([PR #74](https://github.com/MehulPardeshi/de-group5-project/pull/74)). B1 and C1 are in the Google Doc.
-  - Storm Events: source notes ([PR #78](https://github.com/MehulPardeshi/de-group5-project/pull/78): 2025 file 73,351 rows, 2026 file 50,489 rows, 51 columns) and the load, profiling and clean scripts ([PR #83](https://github.com/MehulPardeshi/de-group5-project/pull/83), Nov 22) are on GitHub. B3 and C3 are written (122,848 events, Jan 1, 2025 – Jul 31, 2026). Still missing: the row-count output on #49 and the quality log rows. The files are downloaded; keep them in `data/`, not in git ([PR #66](https://github.com/MehulPardeshi/de-group5-project/pull/66)).
+  - Storm Events: load, profiling and clean scripts ([PR #83](https://github.com/MehulPardeshi/de-group5-project/pull/83)), quality log rows ([PR #86](https://github.com/MehulPardeshi/de-group5-project/pull/86)-[#88](https://github.com/MehulPardeshi/de-group5-project/pull/88)) and corrected source notes ([PR #90](https://github.com/MehulPardeshi/de-group5-project/pull/90): 2025 file 72,360 events, 2026 file 50,488, 122,848 in total, Jan 1, 2025 – Jul 31, 2026; August 2026 is not published yet) are on GitHub. B3 and C3 are written. The files are downloaded; keep them in `data/`, not in git ([PR #66](https://github.com/MehulPardeshi/de-group5-project/pull/66)).
 - **Google Doc:** the "Milestone 2" tab has a section for each owner (Part B data sources, Part C quality and cleaning). The Sat Nov 14 check-in was held in WhatsApp; its notes are in the minutes tab.
 - **Now: Milestone 2**, due **Mon Nov 23, 11:59 pm**: a 3-4 page PDF plus a 5-minute video on data sources, ingestion and initial cleaning. Late work is not accepted. **Sowmya submits by 9 pm; Mehul is backup** (decided at the Nov 21 meeting). Check Canvas for the video-link instructions (Piazza post 39).
 - **Sat Nov 21 meeting** (live, all four, cameras on; held, #68): the video is **voice-over only** (faces not graded); each person records their own narration and Mehul assembles the video. Each owner trims 1-2 lines of their own PDF sections; Mehul shortens Part A and removes the instruction line and [Owner] tags. Questions and reviews go on GitHub, not WhatsApp. Henry writes the minutes.
@@ -43,17 +43,14 @@ _Updated Nov 23, 2026. The project manager keeps this section current._
 
   | Who | Task | Due | Where |
   | --- | --- | --- | --- |
-  | Henry | Six screenshots + voice-over to Mehul (late) | Now | [#48](https://github.com/MehulPardeshi/de-group5-project/issues/48) |
-  | Joshua | Six screenshots + voice-over to Mehul (late) | Now | [#49](https://github.com/MehulPardeshi/de-group5-project/issues/49) |
-  | Joshua | Row-count output, quality log rows, B3/C3 fixes (2025 count, the Aug 2026 gap) | 4 pm | #49 |
-  | Everyone | Last edits to the PDF | 5 pm | [#19](https://github.com/MehulPardeshi/de-group5-project/issues/19) |
-  | Mehul | Shorten Part A, remove the instruction line and [Owner] tags, export the PDF | 5 pm | #19 |
-  | Sowmya | Check the Canvas instructions for the video link | 6 pm | [#21](https://github.com/MehulPardeshi/de-group5-project/issues/21) |
-  | Mehul | Put the video together (5:00 max), send the PDF and video link to Sowmya | 7 pm | [#20](https://github.com/MehulPardeshi/de-group5-project/issues/20) |
-  | Sowmya | Submit the PDF and video on Canvas (Mehul backup); confirmation on #21 | 9 pm | #21 |
+  | Everyone | One **critical** row each in `docs/data_quality_log.md` for a check the code already runs (rubric D3) | 8 pm | [#89](https://github.com/MehulPardeshi/de-group5-project/issues/89) |
+  | Mehul | Record intro, OurAirports and outro voice-overs | 7:45 pm | [#20](https://github.com/MehulPardeshi/de-group5-project/issues/20) |
+  | Mehul | Put the video together (5:00 max), upload to Drive, set "Anyone with the link can view", test in an incognito window | 8:30 pm | #20 |
+  | Mehul | Put the video link inside the PDF (instructors said not to upload the video separately), export (4 pages max), send to Sowmya | 8:45 pm | [#19](https://github.com/MehulPardeshi/de-group5-project/issues/19) |
+  | Sowmya | Submit the PDF on Canvas (Mehul backup; hard deadline 11:59 pm); confirmation on #21 | 9 pm | [#21](https://github.com/MehulPardeshi/de-group5-project/issues/21) |
   | Everyone | Meeting 4: Tue Nov 24, 8 pm, Google Meet (M2 wrap-up, M3 kickoff) | Tue Nov 24 | [#2](https://github.com/MehulPardeshi/de-group5-project/issues/2) |
 
-  Already done: all four datasets loaded and cleaned, B1-B4 and C1-C4 written, all acknowledgment lines in, the PDF exports to 4 pages, and Sowmya's video part is in.
+  Already done: all four datasets loaded and cleaned, B1-B4 and C1-C4 written, all acknowledgment lines in, Storm Events quality log rows in, and the video parts from Sowmya, Henry and Joshua are in.
 
 - **Date range:** Jan 2025 through **Aug 2026** (the latest BTS month when the weather data was loaded). Every dataset uses this range.
 - **Databases:** PostgreSQL runs **locally in Docker** for each person (`docker compose up -d`; setup in [pipeline/setup](pipeline/setup/README.md)). MongoDB Atlas (cloud, shared) holds the NOAA JSON. AWS RDS was blocked on our account.
