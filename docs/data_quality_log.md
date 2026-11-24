@@ -1,6 +1,6 @@
 # Data quality log
 
-Everyone adds a row for every problem found while profiling or cleaning their dataset. The course asks for this record, and it feeds the Milestone 2 PDF and the final presentation.
+Everyone adds a row for every problem found while profiling or cleaning their dataset. The course asks for this record, and it feeds the final report and presentation. In Milestone 3, also log integration problems (airports, stations or zones that don't match, days with missing data) as you build the `integrated` tables.
 
 **Severity:** *critical* means the pipeline should stop with a clear error. *Recoverable* means we fix, exclude or document it.
 

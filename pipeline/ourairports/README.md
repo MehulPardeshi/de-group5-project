@@ -2,7 +2,7 @@
 
 **Owner:** Mehul · **Issue:** [#50](https://github.com/MehulPardeshi/de-group5-project/issues/50) · **Stored in:** PostgreSQL `raw.ourairports_airports`
 
-**Status (Nov 10):** raw load, profiling and `clean.airports` done ([#55](https://github.com/MehulPardeshi/de-group5-project/pull/55)). Still to do: include US territories, quality log rows.
+**Status:** raw load, profiling, `clean.airports` (with US territories) and quality log rows done ([#55](https://github.com/MehulPardeshi/de-group5-project/pull/55), [#57](https://github.com/MehulPardeshi/de-group5-project/pull/57)). **Milestone 3:** airport bridge to weather stations, counties and zones ([#98](https://github.com/MehulPardeshi/de-group5-project/issues/98)), then Q1 ([#102](https://github.com/MehulPardeshi/de-group5-project/issues/102)).
 
 **Run it** (from the repo root, with Docker running):
 ```bash

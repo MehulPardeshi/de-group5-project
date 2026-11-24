@@ -10,8 +10,8 @@ We are building an end-to-end data pipeline that answers a real-world problem: a
 
 | Name | GitHub | Role |
 | --- | --- | --- |
-| Mehul Pardeshi | @MehulPardeshi | Project manager; OurAirports data and database setup |
-| Joshua Kalakoti | @JoshuaKalakoti | NOAA Storm Events data; video editing |
+| Mehul Pardeshi | @MehulPardeshi | Project manager; OurAirports data, database setup, serving tables |
+| Joshua Kalakoti | @JoshuaKalakoti | NOAA Storm Events data; Google Doc owner |
 | Sowmya Rajesh | @Sowmya-Rajesh | BTS flight data; team communication |
 | Yang Lin | @yanglin4ni | NOAA daily weather data (JSON) |
 
@@ -19,23 +19,25 @@ We are building an end-to-end data pipeline that answers a real-world problem: a
 
 Late project submissions are not accepted, and late passes do not apply. If this table and Canvas ever disagree, Canvas wins.
 
-| Date | What | Weight |
-| --- | --- | --- |
-| Mon, Nov 9, 11:59 pm | **Milestone 1:** proposal PDF, 1-2 pages | 1% |
-| Mon, Nov 23, 11:59 pm | **Milestone 2:** PDF, 3-4 pages, plus 5-minute video | 4% |
-| Wed, Dec 9, 5:30-8:30 pm | **Milestone 3:** 15-minute live presentation, everyone in person, plus final report | 20% |
-| To be announced | Individual peer evaluation | 5% |
+| Date | What | Weight | Status |
+| --- | --- | --- | --- |
+| Mon, Nov 9, 11:59 pm | **Milestone 1:** proposal PDF, 1-2 pages | 1% | Graded 20/20 |
+| Mon, Nov 23, 11:59 pm | **Milestone 2:** PDF, 3-4 pages, plus 5-minute video | 4% | Submitted Nov 23 |
+| Wed, Dec 9, 5:30-8:30 pm | **Milestone 3:** 15-minute live presentation, everyone in person, plus final report | 20% | In progress: [tracker #107](../../issues/107) |
+| To be announced | Individual peer evaluation | 5% | |
 
-The midterm falls in the same stretch as Milestone 2 (Nov 16/17), and Thanksgiving break comes right after it, so Milestone 2 tasks are scheduled early.
+**Milestone 3 plan:** each person builds one integration piece from their own dataset (due Sun Nov 29), the serving tables are built on Wed Dec 2, and each person answers one research question (due Fri Dec 4). Who does what is on the pinned [Milestone 3 tracker](../../issues/107).
 
 ## Where things live
 
 | What | Where |
 | --- | --- |
+| What to do now | The pinned [Milestone 3 tracker](../../issues/107) |
 | Tasks and deadlines | [Issues](../../issues) and the [project board](https://github.com/users/MehulPardeshi/projects/2) |
 | Progress by milestone | [Milestones](../../milestones) |
 | Meeting agendas and minutes | [Our shared Google Doc](https://docs.google.com/document/d/1ZRghN_Yd0TvMPLkODDwQJpOp_zMgrPgINymwyh_op-E/edit) (team and teaching staff only; required by the course and reviewed for grading) |
-| Code and SQL | [pipeline/](pipeline), one folder per dataset |
+| Code and SQL | [pipeline/](pipeline), one folder per dataset, plus `serving/` |
+| Answers to our four questions | [analysis/](analysis), one folder per question |
 | Data quality issues | [docs/data_quality_log.md](docs/data_quality_log.md) |
 | Group chat | WhatsApp |
 | Questions for Claude or Codex | Explanations and GitHub help only. Ask it to read [AGENTS.md](AGENTS.md) first. |
@@ -55,11 +57,11 @@ The midterm falls in the same stretch as Milestone 2 (Nov 16/17), and Thanksgivi
 1. Follow [pipeline/setup](pipeline/setup/README.md): install Docker Desktop, copy `.env.example` to `.env`, and run `docker compose up -d`.
 2. Get the MongoDB link from Mehul privately (Yang needs it most). Git ignores `.env`.
 3. `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`, then run `pipeline/setup/check_connections.py`.
-4. Work in your dataset's folder under `pipeline/`, and open a pull request when a step works.
+4. Work in your own folder (`pipeline/<your dataset>/` or `analysis/q<n>_.../`), and open a pull request when a step works.
 
 ## Ground rules
 
 - **Never commit** passwords, API keys, AWS credentials or `.env` files.
 - **Never commit datasets.** They live in PostgreSQL or MongoDB, and the `data/` folder is ignored by git.
 - **Real data only.** Fabricating data is an automatic project failure.
-- **No AI tools for graded work** (team decision, Nov 10). Write your own code and text, and acknowledge any help you get.
+- **No AI tools for graded work** (team decision, Nov 10). Write your own code, SQL, charts and text, and acknowledge any help you get.
