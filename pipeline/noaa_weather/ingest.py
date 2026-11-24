@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[2]
 BASE_URL = "https://www.ncei.noaa.gov/cdo-web/api/v2"
 STATIONS = {
     "ATL": "GHCND:USW00013874",
+    "DEN": "GHCND:USW00003017",
     "DFW": "GHCND:USW00003927",
     "JFK": "GHCND:USW00094789",
     "ORD": "GHCND:USW00094846",
