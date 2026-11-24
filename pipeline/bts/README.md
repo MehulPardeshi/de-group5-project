@@ -8,7 +8,7 @@
 - 12 quality issues in [docs/data_quality_log.md](../../docs/data_quality_log.md); full profiling output in `profile_output.txt`
 - Source details and how to run are in [notes.md](notes.md)
 
-Left for Milestone 2: Sowmya's ~1 minute video clip (see [#47](https://github.com/MehulPardeshi/de-group5-project/issues/47)).
+**Milestone 2:** done and submitted. **Milestone 3:** daily rates by airport and airline ([#101](https://github.com/MehulPardeshi/de-group5-project/issues/101)), then Q3 ([#104](https://github.com/MehulPardeshi/de-group5-project/issues/104)).
 
 ## Files in this folder
 

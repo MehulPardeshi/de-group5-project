@@ -9,7 +9,7 @@
 - 3,040 airport-days in PostgreSQL `clean.noaa_daily`
 - Quality issues are in [docs/data_quality_log.md](../../docs/data_quality_log.md); source details and how to run are in [notes.md](notes.md)
 
-Left for Milestone 2: Henry's ~1 minute video clip (see [#48](https://github.com/MehulPardeshi/de-group5-project/issues/48)).
+**Milestone 2:** done and submitted. **Milestone 3:** add Denver and a daily bad-weather flag ([#99](https://github.com/MehulPardeshi/de-group5-project/issues/99)), then Q2 ([#103](https://github.com/MehulPardeshi/de-group5-project/issues/103)).
 
 ## Files in this folder
 
