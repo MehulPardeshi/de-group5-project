@@ -18,7 +18,16 @@
 | `ingest.py` | Loads the monthly zips from `data/bts/` with COPY and checks the row count (all months, or one month) |
 | `profile.sql` | Quality checks on the raw table; results in `profile_output.txt` |
 | `clean.sql` | Builds `clean.bts_flights`: typed, blanks to NULL, cancellation reasons, dedupe, join indexes |
+| `integrate.sql` | Builds `integrated.bts_daily_airport` and `integrated.bts_daily_airport_airline`: flights, cancellations, late departures, delay and cancellation rates, and delay cause minutes per airport per day ([#101](https://github.com/MehulPardeshi/de-group5-project/issues/101)) |
 | `notes.md` | Source, download date, size, columns, how to run |
 | `quality_log_rows.md` | Copy of the BTS rows in the team quality log |
+
+## How to run (after `clean.sql`)
+
+```
+docker compose exec -T postgres psql -U de -d de_group5 < pipeline/bts/integrate.sql
+```
+
+It takes about 15 seconds, rebuilds both tables from scratch, and ends with two checks: the flight totals (should be 11,730,351 in both tables) and the five busiest airports.
 
 Never commit the data files or passwords. Downloads go in the top-level `data/` folder, which git ignores.
