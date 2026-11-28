@@ -7,7 +7,7 @@
 - Two yearly files (2025 and 2026), 122,848 events, Jan 1, 2025 – Jul 31, 2026 (August 2026 isn't published yet)
 - `clean.storm_events` built by `clean.sql`; quality issues in [docs/data_quality_log.md](../../docs/data_quality_log.md); source details in [notes.md](notes.md)
 
-**Milestone 2:** done and submitted. **Milestone 3:** daily severe-weather flag for ORD, DEN and ATL ([#100](https://github.com/MehulPardeshi/de-group5-project/issues/100)), then Q4 ([#105](https://github.com/MehulPardeshi/de-group5-project/issues/105)).
+**Milestone 2:** done and submitted. **Milestone 3:** daily severe-weather flag for ORD, DEN, ATL and DFW ([#100](https://github.com/MehulPardeshi/de-group5-project/issues/100)), then Q4 ([#105](https://github.com/MehulPardeshi/de-group5-project/issues/105)).
 
 ## Files in this folder
 

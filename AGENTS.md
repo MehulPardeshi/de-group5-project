@@ -29,21 +29,28 @@ _Updated Sat Nov 28, 2026. The project manager keeps this section current._
 - **Milestone 1** (proposal): graded 20/20.
 - **Milestone 2** (data sources, ingestion, cleaning: PDF plus video): submitted by Sowmya on Mon Nov 23 at 10:06 pm ([#21](https://github.com/MehulPardeshi/de-group5-project/issues/21)). Grade pending. All four datasets are loaded into `raw` and cleaned into `clean`.
 - **Now: Milestone 3**, Wed Dec 9, 5:30–8:30 pm: a live, in-person presentation (everyone attends) plus a final report. Worth 20%. Report due date, length and presentation rubric aren't announced yet; Sowmya is finding them ([#106](https://github.com/MehulPardeshi/de-group5-project/issues/106)).
-- **Pinned tracker:** [#107](https://github.com/MehulPardeshi/de-group5-project/issues/107) "Milestone 3: who does what". The plan below is being confirmed at the Sat Nov 28 meeting; if the team swaps tasks, the issues' assignees are the truth.
+- **Pinned tracker:** [#107](https://github.com/MehulPardeshi/de-group5-project/issues/107) "Milestone 3: who does what". The plan below was confirmed at the Sat Nov 28 meeting; if the team swaps tasks later, the issues' assignees are the truth.
+- **Decided at the Sat Nov 28 meeting** (all four; Tue Nov 24 was not held):
+  - Q4 covers **four airports: ORD, DEN, ATL and DFW**. ATL leads DFW by only 113 departures, so they're treated as tied for third (recorded on #76).
+  - Henry explains in his Q2 write-up why about 44% of airport-days count as bad weather ([#103](https://github.com/MehulPardeshi/de-group5-project/issues/103)).
+  - Mehul's bridge (#98) and Joshua's Storm Events flag (#100) are due **Sun Nov 29**, merged together.
+  - Sowmya emails the professor for the rubric, whether the report is a separate submission, and the presentation format ([#106](https://github.com/MehulPardeshi/de-group5-project/issues/106)).
+  - The rehearsal moves to **Wed Dec 9, before the presentation** (exams on Dec 7 and Dec 10).
+  - Next meetings: **Wed Dec 2, 4 pm** and **Sat Dec 5, 11 am** (calendar invites sent).
 - **Progress (Nov 28):**
   - Henry's NOAA piece is ready in [PR #109](https://github.com/MehulPardeshi/de-group5-project/pull/109): Denver added, `integrated.noaa_daily` with 3,648 airport-days (1,589 bad, 2,046 good, 13 unknown). Waiting for review.
   - Sowmya's BTS piece is ready in [PR #110](https://github.com/MehulPardeshi/de-group5-project/pull/110): `integrated.bts_daily_airport` and `integrated.bts_daily_airport_airline`, both adding up to 11,730,351 flights. It confirms ORD, DEN, ATL as the top three, though ATL leads DFW by only 113 flights. Waiting for review.
-  - Mehul's airport bridge (#98) is late (was due Fri Nov 27), and Joshua's Storm Events flag (#100) depends on it. The M3 requirements (#106) aren't posted yet.
+  - Mehul's airport bridge (#98) and Joshua's Storm Events flag (#100) are in progress for Sun Nov 29. The M3 requirements (#106) aren't posted yet.
 
 ### Milestone 3 tasks
 Each person keeps their dataset, builds one integration piece from it, then answers one research question.
 
 | Who | Integration piece (due Sun Nov 29) | Question (due Fri Dec 4) | Also |
 | --- | --- | --- | --- |
-| Mehul | [#98](https://github.com/MehulPardeshi/de-group5-project/issues/98) Airport bridge: IATA → weather station, county, zone (**due Fri Nov 27**, others build on it) | [#102](https://github.com/MehulPardeshi/de-group5-project/issues/102) Q1 | [#23](https://github.com/MehulPardeshi/de-group5-project/issues/23) serving tables (Wed Dec 2); assembles deck and report |
+| Mehul | [#98](https://github.com/MehulPardeshi/de-group5-project/issues/98) Airport bridge: IATA → weather station, county, zone (**due Sun Nov 29**, Joshua's #100 builds on it) | [#102](https://github.com/MehulPardeshi/de-group5-project/issues/102) Q1 | [#23](https://github.com/MehulPardeshi/de-group5-project/issues/23) serving tables (Wed Dec 2); assembles deck and report |
 | Henry | [#99](https://github.com/MehulPardeshi/de-group5-project/issues/99) NOAA: add Denver, daily bad-weather flag | [#103](https://github.com/MehulPardeshi/de-group5-project/issues/103) Q2 | Update or close his draft-definitions PR [#46](https://github.com/MehulPardeshi/de-group5-project/pull/46) |
 | Sowmya | [#101](https://github.com/MehulPardeshi/de-group5-project/issues/101) BTS: daily rates by airport and airline | [#104](https://github.com/MehulPardeshi/de-group5-project/issues/104) Q3 | [#106](https://github.com/MehulPardeshi/de-group5-project/issues/106) find M3 requirements (Sat Nov 28); submits the report |
-| Joshua | [#100](https://github.com/MehulPardeshi/de-group5-project/issues/100) Storm Events: daily severe-weather flag for ORD, DEN, ATL | [#105](https://github.com/MehulPardeshi/de-group5-project/issues/105) Q4 | |
+| Joshua | [#100](https://github.com/MehulPardeshi/de-group5-project/issues/100) Storm Events: daily severe-weather flag for ORD, DEN, ATL, DFW | [#105](https://github.com/MehulPardeshi/de-group5-project/issues/105) Q4 | |
 
 Everyone: their slides and report sections ([#25](https://github.com/MehulPardeshi/de-group5-project/issues/25), [#26](https://github.com/MehulPardeshi/de-group5-project/issues/26)) and presenting in person ([#27](https://github.com/MehulPardeshi/de-group5-project/issues/27)). Umbrella issues: [#22](https://github.com/MehulPardeshi/de-group5-project/issues/22) integration, [#24](https://github.com/MehulPardeshi/de-group5-project/issues/24) analysis.
 
@@ -51,18 +58,16 @@ Everyone: their slides and report sections ([#25](https://github.com/MehulPardes
 
 | By | What | Issue |
 | --- | --- | --- |
-| Sat Nov 28 | Meeting (Google Meet): M2 wrap-up, agree the M3 plan | #2 |
+| ✅ Sat Nov 28 | Meeting held: M2 wrap-up, M3 plan confirmed | #2 |
 | Thu Nov 26 – Sun Nov 29 | Thanksgiving break; integration work fits around it | |
-| Fri Nov 27 | Airport bridge merged | #98 |
-| Sat Nov 28 | Report and presentation requirements found | #106 |
-| Sun Nov 29 | All four integration pieces merged | #22 |
-| Wed Dec 2 | Serving tables built from a full rebuild on one machine; short live check-in | #23, #2 |
+| As soon as the professor replies | Report and presentation requirements posted | #106 |
+| Sun Nov 29 | All four integration pieces merged, including the bridge | #22 |
+| Wed Dec 2, 4 pm | Serving tables built from a full rebuild on one machine; live check-in | #23, #2 |
 | Fri Dec 4 | Each question answered: query, 1–2 charts, short written answer | #24 |
 | Sat Dec 5, 11am | Weekly meeting: review results, plan slides and report | #2 |
-| Sun Dec 6 | Slides and report sections to Mehul | #25, #26 |
-| Mon Dec 7 | Deck assembled | #25 |
-| Tue Dec 8 | Timed rehearsal, all four, live | #25 |
-| **Wed Dec 9, 5:30 pm** | **Present in person**; final report (due date to be announced) | #26, #27 |
+| Sat Dec 5 – Sun Dec 6 | Slides and report sections to Mehul; he assembles the deck and report | #25, #26 |
+| Mon Dec 7, Thu Dec 10 | Other exams (no project work planned) | |
+| **Wed Dec 9** | Rehearsal in person before the talk (come early), then **present at 5:30 pm**; final report (due date to be announced) | #25, #26, #27 |
 
 ### Agreed definitions ([#76](https://github.com/MehulPardeshi/de-group5-project/issues/76), closed; don't reopen without the team)
 - **Period:** Jan 2025 – Aug 2026 for every dataset. Storm Events ends Jul 31, 2026 (August isn't published), so Q4 covers Jan 2025 – Jul 2026.
@@ -71,7 +76,7 @@ Everyone: their slides and report sections ([#25](https://github.com/MehulPardes
 - **Rates:** delay rate = departures 15+ minutes late ÷ non-cancelled flights; cancellation rate = cancelled ÷ scheduled.
 - **Usual (Q4):** the median rate on non-bad-weather days at the same airport in the same year and month.
 - **Recovery (Q4):** the first two days in a row within 5 percentage points of usual; 1 point reported as a sensitivity check.
-- **Three busiest airports:** ORD, DEN, ATL (by scheduled departures in our BTS data). **Study airports with weather data:** ATL, DEN, DFW, JFK, ORD, PIT (Denver is added in #99).
+- **Busiest airports (Q4):** ORD, DEN, ATL and DFW, by scheduled departures in our BTS data (ORD 573,580; DEN 531,750; ATL 525,113; DFW 525,000). ATL and DFW are tied for third (decided Nov 28). **Study airports with weather data:** ATL, DEN, DFW, JFK, ORD, PIT (Denver is added in #99).
 
 ### Data and storage
 
@@ -88,7 +93,7 @@ Everyone: their slides and report sections ([#25](https://github.com/MehulPardes
 
 ### Meetings
 - Weekly, **live** (Google Meet or in person), cameras on. Tracker: [#2](https://github.com/MehulPardeshi/de-group5-project/issues/2). Per Piazza post 39, WhatsApp or Slack threads don't count.
-- Usual time: **Saturdays, 11am**. The Thanksgiving-week rule names Mon Nov 23 or Tue Nov 24 (otherwise two meetings Nov 30 – Dec 6), so after the Sat Nov 28 meeting we also meet Wed Dec 2 and Sat Dec 5, then rehearse on Tue Dec 8.
+- Usual time: **Saturdays, 11am**. Held Sat Nov 28. Because the Thanksgiving-week rule names Mon Nov 23 or Tue Nov 24, we hold two meetings Nov 30 – Dec 6: **Wed Dec 2, 4 pm** and **Sat Dec 5, 11am**. Rehearsal is in person on Wed Dec 9 before the presentation.
 - Minutes go in the Google Doc's "Meeting Agenda & Minutes" tab. The teaching team has Editor access and checks its version history.
 
 ## What to do first
