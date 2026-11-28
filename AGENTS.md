@@ -24,12 +24,16 @@ A teammate has asked you for help with our course project. Read this whole file 
 4. After a severe-weather day, how many days do the three busiest US airports take to get back to normal?
 
 ## Current status
-_Updated Tue Nov 24, 2026. The project manager keeps this section current._
+_Updated Sat Nov 28, 2026. The project manager keeps this section current._
 
 - **Milestone 1** (proposal): graded 20/20.
 - **Milestone 2** (data sources, ingestion, cleaning: PDF plus video): submitted by Sowmya on Mon Nov 23 at 10:06 pm ([#21](https://github.com/MehulPardeshi/de-group5-project/issues/21)). Grade pending. All four datasets are loaded into `raw` and cleaned into `clean`.
 - **Now: Milestone 3**, Wed Dec 9, 5:30–8:30 pm: a live, in-person presentation (everyone attends) plus a final report. Worth 20%. Report due date, length and presentation rubric aren't announced yet; Sowmya is finding them ([#106](https://github.com/MehulPardeshi/de-group5-project/issues/106)).
-- **Pinned tracker:** [#107](https://github.com/MehulPardeshi/de-group5-project/issues/107) "Milestone 3: who does what". The plan below was proposed for Meeting 4 (Tue Nov 24, 8 pm); if the team swaps tasks there, the issues' assignees are the truth.
+- **Pinned tracker:** [#107](https://github.com/MehulPardeshi/de-group5-project/issues/107) "Milestone 3: who does what". The plan below is being confirmed at the Sat Nov 28 meeting; if the team swaps tasks, the issues' assignees are the truth.
+- **Progress (Nov 28):**
+  - Henry's NOAA piece is ready in [PR #109](https://github.com/MehulPardeshi/de-group5-project/pull/109): Denver added, `integrated.noaa_daily` with 3,648 airport-days (1,589 bad, 2,046 good, 13 unknown). Waiting for review.
+  - Sowmya's BTS piece is ready in [PR #110](https://github.com/MehulPardeshi/de-group5-project/pull/110): `integrated.bts_daily_airport` and `integrated.bts_daily_airport_airline`, both adding up to 11,730,351 flights. It confirms ORD, DEN, ATL as the top three, though ATL leads DFW by only 113 flights. Waiting for review.
+  - Mehul's airport bridge (#98) is late (was due Fri Nov 27), and Joshua's Storm Events flag (#100) depends on it. The M3 requirements (#106) aren't posted yet.
 
 ### Milestone 3 tasks
 Each person keeps their dataset, builds one integration piece from it, then answers one research question.
@@ -47,12 +51,12 @@ Everyone: their slides and report sections ([#25](https://github.com/MehulPardes
 
 | By | What | Issue |
 | --- | --- | --- |
-| Tue Nov 24, 8 pm | Meeting 4 (Google Meet): M2 wrap-up, agree the M3 plan | #2 |
+| Sat Nov 28 | Meeting (Google Meet): M2 wrap-up, agree the M3 plan | #2 |
 | Thu Nov 26 – Sun Nov 29 | Thanksgiving break; integration work fits around it | |
 | Fri Nov 27 | Airport bridge merged | #98 |
 | Sat Nov 28 | Report and presentation requirements found | #106 |
 | Sun Nov 29 | All four integration pieces merged | #22 |
-| Wed Dec 2 | Serving tables built from a full rebuild on one machine | #23 |
+| Wed Dec 2 | Serving tables built from a full rebuild on one machine; short live check-in | #23, #2 |
 | Fri Dec 4 | Each question answered: query, 1–2 charts, short written answer | #24 |
 | Sat Dec 5, 11am | Weekly meeting: review results, plan slides and report | #2 |
 | Sun Dec 6 | Slides and report sections to Mehul | #25, #26 |
@@ -84,7 +88,7 @@ Everyone: their slides and report sections ([#25](https://github.com/MehulPardes
 
 ### Meetings
 - Weekly, **live** (Google Meet or in person), cameras on. Tracker: [#2](https://github.com/MehulPardeshi/de-group5-project/issues/2). Per Piazza post 39, WhatsApp or Slack threads don't count.
-- Usual time: **Saturdays, 11am**. Thanksgiving week is covered by Tue Nov 24; next are Sat Dec 5 and a rehearsal on Tue Dec 8.
+- Usual time: **Saturdays, 11am**. The Thanksgiving-week rule names Mon Nov 23 or Tue Nov 24 (otherwise two meetings Nov 30 – Dec 6), so after the Sat Nov 28 meeting we also meet Wed Dec 2 and Sat Dec 5, then rehearse on Tue Dec 8.
 - Minutes go in the Google Doc's "Meeting Agenda & Minutes" tab. The teaching team has Editor access and checks its version history.
 
 ## What to do first
