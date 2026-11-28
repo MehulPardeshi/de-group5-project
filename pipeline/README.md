@@ -7,7 +7,7 @@ One folder per dataset, so nobody edits the same files. Each owner keeps working
 | [setup](setup) | Local PostgreSQL (Docker) and shared MongoDB Atlas | Mehul | Done | Add `integrated` and `serving` schemas ([#98](https://github.com/MehulPardeshi/de-group5-project/issues/98)) |
 | [bts](bts) | BTS on-time flights | Sowmya | Done | Daily rates by airport and airline ([#101](https://github.com/MehulPardeshi/de-group5-project/issues/101)) |
 | [noaa_weather](noaa_weather) | NOAA daily weather (JSON) | Henry | Done | Add Denver, daily bad-weather flag ([#99](https://github.com/MehulPardeshi/de-group5-project/issues/99)) |
-| [storm_events](storm_events) | NOAA Storm Events | Joshua | Done | Daily severe-weather flag for ORD, DEN, ATL ([#100](https://github.com/MehulPardeshi/de-group5-project/issues/100)) |
+| [storm_events](storm_events) | NOAA Storm Events | Joshua | Done | Daily severe-weather flag for ORD, DEN, ATL, DFW ([#100](https://github.com/MehulPardeshi/de-group5-project/issues/100)) |
 | [ourairports](ourairports) | OurAirports | Mehul | Done | Airport bridge to weather stations, counties and zones ([#98](https://github.com/MehulPardeshi/de-group5-project/issues/98)) |
 | [serving](serving) | Tables the analysis reads from | Mehul | — | Serving tables ([#23](https://github.com/MehulPardeshi/de-group5-project/issues/23)) |
 

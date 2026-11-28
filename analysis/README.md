@@ -7,7 +7,7 @@ One folder per research question, one owner each. Due **Fri Dec 4** (umbrella is
 | `q1_delay_causes/` | What share of flight delays are caused by weather, compared with airline, airport or air-traffic causes? | Mehul | [#102](https://github.com/MehulPardeshi/de-group5-project/issues/102) |
 | `q2_weather_attribution/` | When a delay is attributed to weather, was the weather actually bad that day? | Henry | [#103](https://github.com/MehulPardeshi/de-group5-project/issues/103) |
 | `q3_airlines_same_weather/` | Under similar weather at the same airport, which airlines have the lowest delay and cancellation rates? | Sowmya | [#104](https://github.com/MehulPardeshi/de-group5-project/issues/104) |
-| `q4_recovery/` | After a severe-weather day, how many days do the three busiest US airports (ORD, DEN, ATL) take to get back to normal? | Joshua | [#105](https://github.com/MehulPardeshi/de-group5-project/issues/105) |
+| `q4_recovery/` | After a severe-weather day, how many days do the busiest US airports (ORD, DEN, and ATL and DFW tied for third) take to get back to normal? | Joshua | [#105](https://github.com/MehulPardeshi/de-group5-project/issues/105) |
 
 ## What goes in your folder
 
